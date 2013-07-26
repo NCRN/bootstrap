@@ -1,6 +1,8 @@
 BOOTSTRAP = ./docs/assets/css/bootstrap.css
+BOOTSTRAP_MIN = ./docs/assets/css/bootstrap.min.css
 BOOTSTRAP_LESS = ./less/bootstrap-nps.less
 BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
+BOOTSTRAP_RESPONSIVE_MIN = ./docs/assets/css/bootstrap-responsive.min.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
 DATE=$(shell date +%I:%M%p)
 CHECK=\033[32m✔\033[39m
@@ -20,6 +22,8 @@ build:
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@./node_modules/.bin/recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
+	@./node_modules/.bin/recess --compress ${BOOTSTRAP} > ${BOOTSTRAP_MIN}
+	@./node_modules/.bin/recess --compress ${BOOTSTRAP_RESPONSIVE} > ${BOOTSTRAP_RESPONSIVE_MIN}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
 	@node docs/build
 	@cp img/* docs/assets/img/
