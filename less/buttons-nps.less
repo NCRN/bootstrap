@@ -123,13 +123,14 @@ input[type="button"] {
 // --------------------------------------------------
 
 // Provide *some* extra contrast for those who can get it
+.btn-danger.active,
+.btn-info.active,
+.btn-inverse.active,
 .btn-primary.active,
 .btn-secondary.active,
-.btn-warning.active,
-.btn-danger.active,
+.btn-subtle.active,
 .btn-success.active,
-.btn-info.active,
-.btn-inverse.active {
+.btn-warning.active {
   color: rgba(255,255,255,.75);
 }
 
@@ -231,6 +232,31 @@ input[type="button"] {
     cursor: default;
     .box-shadow(none);
     .opacity(65);
+  }
+}
+.btn-subtle {
+  background-color: #efece3;
+  background-image: none;
+  box-shadow: none;
+  color: #454545;
+  font-size: 16px;
+  padding: 12px 10px;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  width: 100%;
+  .border-radius(~"4px / 3px");
+
+  &:hover,
+  &:focus,
+  &.active,
+  &:active {
+    background-color: #efece3;
+    background-image: none;
+    background-position: 0 0;
+    color: #454545;
+    font-size: 16px;
+    text-decoration: none;
+    .box-shadow(~"none");
   }
 }
 .btn-danger {
