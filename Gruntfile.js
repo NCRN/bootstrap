@@ -74,14 +74,14 @@ module.exports = function(grunt) {
         compile: true
       },
       bootstrap: {
-        src: ['less/bootstrap.less'],
+        src: ['less/bootstrap-nps.less'],
         dest: 'dist/css/<%= pkg.name %>.css'
       },
       min: {
         options: {
           compress: true
         },
-        src: ['less/bootstrap.less'],
+        src: ['less/bootstrap-nps.less'],
         dest: 'dist/css/<%= pkg.name %>.min.css'
       }
     },

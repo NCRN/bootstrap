@@ -1,10 +1,18 @@
-# [Bootstrap v3.0.0](http://getbootstrap.com) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap)
+<p align="center">
+  <img src="http://www.nps.gov/npmap/img/nps-arrowhead-medium.png" alt="NPS Arrowhead">
+</p>
 
-Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).
+# NPS Bootstrap
 
-To get started, check out [http://getbootstrap.com](http://getbootstrap.com)!
+A version of the [Twitter Bootstrap](http://twitter.github.com/bootstrap) app framework customized to fit into the graphic identify of the [National Park Service](http://www.nps.gov).
 
+All of the NPS customizations live in the <code>less</code> directory and end with <code>-nps</code>.
 
+# Status
+
+Work on NPS Bootstrap is just getting started, so most components have not yet been re-themed.
+
+# Twitter Bootstrap README
 
 ## Quick start
 
@@ -16,13 +24,9 @@ Three quick start options are available:
 
 Read the [Getting Started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
 
-
-
 ## Bugs and feature requests
 
 Have a bug or a feature request? [Please open a new issue](https://github.com/twbs/bootstrap/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
-
-
 
 ## Documentation
 
@@ -42,8 +46,6 @@ Learn more about using Jekyll by reading their [documentation](http://jekyllrb.c
 Documentation for v2.3.2 has been made available for the time being at [http://getbootstrap.com/2.3.2/](http://getbootstrap.com/2.3.2/) while folks transition to Bootstrap 3.
 
 [Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
-
-
 
 ## Compiling CSS and JavaScript
 
@@ -78,8 +80,6 @@ This is a convenience method for watching just Less files and automatically buil
 
 Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
 
-
-
 ## Contributing
 
 Please read through our guidelines for contributing to Bootstrap. Included are directions for opening issues, coding standards, and notes on development.
@@ -87,8 +87,6 @@ Please read through our guidelines for contributing to Bootstrap. Included are d
 More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
 
 Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at [http://editorconfig.org](http://editorconfig.org).
-
-
 
 ## Community
 
@@ -98,9 +96,6 @@ Keep track of development and community news.
 * Read and subscribe to the [The Official Bootstrap Blog](http://blog.getbootstrap.com).
 * Have a question that's not a feature request or bug report? [Ask on the mailing list.](http://groups.google.com/group/twitter-bootstrap)
 * Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##twitter-bootstrap` channel.
-
-
-
 
 ## Versioning
 
@@ -118,8 +113,6 @@ And constructed with the following guidelines:
 
 For more information on SemVer, please visit [http://semver.org/](http://semver.org/).
 
-
-
 ## Authors
 
 **Mark Otto**
@@ -131,8 +124,6 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 + [http://twitter.com/fat](http://twitter.com/fat)
 + [http://github.com/fat](http://github.com/fat)
-
-
 
 ## Copyright and license
 
