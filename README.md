@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 <p align="center">
   <img src="http://www.nps.gov/npmap/img/nps-arrowhead-medium.png" alt="NPS Arrowhead">
 </p>
+=======
+# [Bootstrap](http://getbootstrap.com) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap)
+>>>>>>> upstream/master
 
 # NPS Bootstrap
 
@@ -18,7 +22,7 @@ Work on NPS Bootstrap is just getting started, so most components have not yet b
 
 Three quick start options are available:
 
-* [Download the latest release](https://github.com/twbs/bootstrap/zipball/3.0.0-wip).
+* [Download the latest release](https://github.com/twbs/bootstrap/releases/tag/v3.0.0).
 * Clone the repo: `git clone git://github.com/twbs/bootstrap.git`.
 * Install with [Bower](http://bower.io): `bower install bootstrap`.
 
@@ -28,6 +32,13 @@ Read the [Getting Started page](http://getbootstrap.com/getting-started/) for in
 
 Have a bug or a feature request? [Please open a new issue](https://github.com/twbs/bootstrap/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
 
+<<<<<<< HEAD
+=======
+You may use [this JS Bin](http://jsbin.com/aKiCIDO/1/edit) as a template for your bug reports.
+
+
+
+>>>>>>> upstream/master
 ## Documentation
 
 Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at [http://getbootstrap.com](http://getbootstrap.com). The docs may also be run locally.
@@ -65,13 +76,13 @@ When completed, you'll be able to run the various Grunt commands provided from t
 ### Available Grunt commands
 
 #### Build - `grunt`
-Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`. **Requires [recess](https://github.com/twitter/recess) and [uglify-js](https://github.com/mishoo/UglifyJS).**
+Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`. **Uses [recess] and [UglifyJS].**
 
 #### Only compile CSS and JavaScript - `grunt dist`
-`grunt dist` creates the `/dist` directory with compiled files. **Requires [recess](https://github.com/twitter/recess) and [uglify-js](https://github.com/mishoo/UglifyJS).**
+`grunt dist` creates the `/dist` directory with compiled files. **Uses [recess] and [UglifyJS].**
 
 #### Tests - `grunt test`
-Runs jshint and qunit tests headlessly in [phantomjs](https://github.com/ariya/phantomjs/) (used for CI). **Requires [phantomjs](https://github.com/ariya/phantomjs/).**
+Runs [JSHint](http://jshint.com) and [QUnit](http://qunitjs.com/) tests headlessly in [PhantomJS](http://phantomjs.org/) (used for CI).
 
 #### Watch - `grunt watch`
 This is a convenience method for watching just Less files and automatically building them whenever you save.
@@ -127,4 +138,12 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 ## Copyright and license
 
+<<<<<<< HEAD
 Copyright 2012 Twitter, Inc under [the Apache 2.0 license](LICENSE).
+=======
+Copyright 2013 Twitter, Inc under [the Apache 2.0 license](LICENSE).
+
+  [recess]:     http://twitter.github.io/recess/  "recess"
+  [uglifyjs]:   http://lisperator.net/uglifyjs/   "UglifyJS"
+  
+>>>>>>> upstream/master
