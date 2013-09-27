@@ -11,3 +11,5 @@ All of the NPS customizations live in the <code>less</code> directory and end wi
 # Status
 
 Work on NPS Bootstrap is just getting started, so most components have not yet been re-themed.
+
+[![Build Status](https://secure.travis-ci.org/nationalparkservice/bootstrap.png)](http://travis-ci.org/nationalparkservice/bootstrap) [![devDependency Status](https://david-dm.org/nationalparkservice/bootstrap/dev-status.png)](https://david-dm.org/nationalparkservice/bootstrap#info=devDependencies)

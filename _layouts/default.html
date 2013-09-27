@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
     {% include header.html %}
-    <!-- Place anything custom after this. -->
   </head>
   <body>
     <a class="sr-only" href="#content">Skip navigation</a>
-
-    <!-- Docs master nav -->
     {% include nav-main.html %}
-
-    <!-- Docs page layout -->
     <div class="bs-header" id="content">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
       </div>
     </div>
-
-    <!-- Callout for the old docs link -->
-    {% include old-bs-docs.html %}
-
+    {% include status.html %}
     <div class="container bs-docs-container">
       <div class="row">
         <div class="col-md-3">
