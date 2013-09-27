@@ -1,5 +1,5 @@
 window.onload = function () { // wait for load in a dumb way because B-0
-  var cw = '/*!\n * Bootstrap v3.0.0\n *\n * Copyright 2013 Twitter, Inc\n * Licensed under the Apache License v2.0\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Designed and built with all the love in the world @twitter by @mdo and @fat.\n */\n\n'
+  var cw = '/*!\n * Bootstrap v3.0.0\n *\n * Copyright 2013 Twitter, Inc\n * Licensed under the Apache License v2.0\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Designed and built with all the love in the world @twitter by @mdo and @fat. Customized by the National Park Service.\n */\n\n'
 
   function showError(msg, err) {
     $('<div id="bsCustomizerAlert" class="bs-customizer-alert">\
@@ -33,7 +33,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
 
   function createGist(configData) {
     var data = {
-      "description": "Bootstrap Customizer Config",
+      "description": "NPS Bootstrap Customizer Config",
       "public": true,
       "files": {
         "config.json": {
@@ -169,7 +169,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
           $(this).val() && (vars[ $(this).prev().text() ] = $(this).val())
         })
 
-    css += __less['variables.less']
+    css += __less['variables-nps.less']
     if (vars) css += generateCustomCSS(vars)
     css += __less['mixins.less']
     css += __less['normalize.less']
@@ -183,16 +183,16 @@ window.onload = function () { // wait for load in a dumb way because B-0
 
     try {
       var parser = new less.Parser({
-          paths: ['variables.less', 'mixins.less']
+          paths: ['variables-nps.less', 'mixins.less']
         , optimization: 0
-        , filename: 'bootstrap.css'
+        , filename: 'nps-bootstrap.css'
       }).parse(css, function (err, tree) {
         if (err) {
           return showError('<strong>Ruh roh!</strong> Could not parse less files.', err)
         }
         result = {
-          'bootstrap.css'     : cw + tree.toCSS(),
-          'bootstrap.min.css' : cw + tree.toCSS({ compress: true })
+          'nps-bootstrap.css'     : cw + tree.toCSS(),
+          'nps-bootstrap.min.css' : cw + tree.toCSS({ compress: true })
         }
       })
     } catch (err) {
@@ -212,8 +212,8 @@ window.onload = function () { // wait for load in a dumb way because B-0
       .join('\n')
 
     return {
-      'bootstrap.js': js,
-      'bootstrap.min.js': cw + uglify(js)
+      'nps-bootstrap.js': js,
+      'nps-bootstrap.min.js': cw + uglify(js)
     }
   }
 
@@ -268,7 +268,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
 
     generateZip(generateCSS(), generateJavascript(), generateFonts(), function (blob) {
       $compileBtn.removeAttr('disabled')
-      saveAs(blob, "bootstrap.zip")
+      saveAs(blob, "nps-bootstrap.zip")
       createGist(getCustomizerData())
     })
   })
@@ -278,7 +278,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
     showCallout("Looks like you're using safari, which sadly doesn't have the best support\
                  for HTML5 blobs. Because of this your file will be downloaded with the name <code>\"untitled\"</code>.\
                  However, if you check your downloads folder, just rename this <code>\"untitled\"</code> file\
-                 to <code>\"bootstrap.zip\"</code> and you should be good to go!")
+                 to <code>\"nps-bootstrap.zip\"</code> and you should be good to go!")
   } else if (!window.URL && !window.webkitURL) {
     $('.bs-docs-section, .bs-sidebar').css('display', 'none')
 
