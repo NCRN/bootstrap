@@ -6,7 +6,6 @@ lead: Customize Bootstrap's components, LESS variables, and jQuery plugins to ge
 base_url: "../"
 ---
 
-<!-- Customizer form -->
 <form class="bs-customizer" role="form">
   <div class="bs-docs-section" id="less-section">
     <div class="page-header">
@@ -14,7 +13,6 @@ base_url: "../"
       <h1 id="less">LESS files</h1>
     </div>
     <p class="lead">Choose which LESS files to compile into your custom build of Bootstrap. Not sure which files to use? Read through the <a href="../css/">CSS</a> and <a href="../components/">Components</a> pages in the docs</p>
-
     <div class="row">
       <div class="col-xs-6 col-sm-4">
         <h3>Common CSS</h3>
@@ -60,8 +58,7 @@ base_url: "../"
             Buttons
           </label>
         </div>
-      </div><!-- .col-xs-6 .col-sm-4 -->
-
+      </div>
       <div class="col-xs-6 col-sm-4">
         <h3>Components</h3>
         <div class="checkbox">
@@ -178,8 +175,7 @@ base_url: "../"
             Close icon
           </label>
         </div>
-      </div><!-- .col-xs-6 .col-sm-4 -->
-
+      </div>
       <div class="col-xs-6 col-sm-4">
         <h3>JavaScript components</h3>
         <div class="checkbox">
@@ -212,7 +208,6 @@ base_url: "../"
             Carousel
           </label>
         </div>
-
         <h3>Utilities</h3>
         <div class="checkbox">
           <label>
@@ -232,12 +227,9 @@ base_url: "../"
             Component animations (for JS)
           </label>
         </div>
-      </div><!-- .col-xs-6 .col-sm-4 -->
-    </div><!-- /.row -->
+      </div>
+    </div>
   </div>
-
-
-
   <div class="bs-docs-section" id="plugin-section">
     <div class="page-header">
       <button class="btn btn-default toggle" type="button">Toggle all</button>
@@ -324,29 +316,22 @@ base_url: "../"
         </div>
       </div>
     </div>
-
     <div class="bs-callout bs-callout-info">
       <h4>Produces two files</h4>
       <p>All checked plugins will be compiled into a readable <code>bootstrap.js</code> and a minified <code>bootstrap.min.js</code>. We recommend you use the minified version in production.</p>
     </div>
-
     <div class="bs-callout bs-callout-danger">
       <h4>jQuery required</h4>
       <p>All plugins require the latest version of <a href="http://jquery.com/" target="_blank">jQuery</a> to be included.</p>
     </div>
   </div>
-
-
-
   <div class="bs-docs-section" id="less-variables-section">
     <div class="page-header">
       <button class="btn btn-default toggle" type="button">Reset to defaults</button>
       <h1 id="less-variables">LESS variables</h1>
     </div>
     <p class="lead">Customize LESS variables to define colors, sizes and more inside your custom CSS stylesheets.</p>
-
     <h2 id="variables-basics">Basics</h2>
-
     <h3>Body background</h3>
     <div class="row">
       <div class="col-lg-6">
@@ -355,7 +340,6 @@ base_url: "../"
         <p class="help-block">Background color applied to <code>&lt;body&gt;</code>.</p>
       </div>
     </div>
-
     <h3>Typography</h3>
     <div class="row">
       <div class="col-lg-6">
@@ -381,7 +365,6 @@ base_url: "../"
         <p class="help-block">Used to calculate line-height throughout Bootstrap.</p>
       </div>
     </div>
-
     <h3>Code blocks</h3>
     <div class="row">
       <div class="col-lg-6">
@@ -399,7 +382,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="#ccc" data-var="@pre-border-color">
       </div>
     </div>
-
     <h4>Headings</h4>
     <div class="row">
       <div class="col-lg-6">
@@ -416,7 +398,6 @@ base_url: "../"
         <p class="help-block">Choose a separate line-height for headings.</p>
       </div>
     </div>
-
     <h3>Colors</h3>
     <div class="row">
       <div class="col-lg-6">
@@ -450,7 +431,6 @@ base_url: "../"
         <p class="help-block">Automatically darken links on hover via color function.</p>
       </div>
     </div>
-
     <h3>Media queries breakpoints</h3>
     <p>Define the breakpoints at which your layout will change, adapting to different screen sizes.</p>
     <div class="row">
@@ -467,7 +447,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="1200px" data-var="@screen-lg">
       </div>
     </div>
-
     <h3>Container sizes</h3>
     <p>Define the maximum width of <code>.container</code> for different screen sizes.</p>
     <div class="row">
@@ -488,18 +467,9 @@ base_url: "../"
         <p class="help-block">For <code>@screen-lg</code> and up.</p>
       </div>
     </div>
-
     <h3>Grid system</h3>
     <p>Define your custom responsive grid.</p>
     <div class="row">
-<!--
-  Temporarily removed until mixins are restored in v3.1
-      <div class="col-xs-6 col-sm-4">
-        <label>@grid-columns</label>
-        <input type="text" class="form-control" placeholder="12" data-var="@grid-columns">
-        <p class="help-block">Number of columns in the grid.</p>
-      </div>
- -->
       <div class="col-xs-6 col-sm-4">
         <label>@grid-gutter-width</label>
         <input type="text" class="form-control" placeholder="30px" data-var="@grid-gutter-width">
@@ -512,7 +482,6 @@ base_url: "../"
         <p class="help-block">Point at which the navbar stops collapsing.</p>
       </div>
     </div>
-
     <h3>Components</h3>
     <p>Define common padding and border radius sizes and more.</p>
     <div class="row">
@@ -545,7 +514,6 @@ base_url: "../"
         <p class="help-block">Used for active or hovered items in places like navs or dropdowns.</p>
       </div>
     </div>
-
     <h2 id="variables-buttons">Buttons</h2>
     <p>For each of Bootstrap's buttons, define text, background and border color.</p>
     <div class="row">
@@ -599,7 +567,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="@btn-danger-bg" data-var="@btn-danger-border">
       </div>
     </div>
-
     <h2 id="variables-form-states">Form states and alerts</h2>
     <p>Define colors for form feedback states and, by default, alerts.</p>
     <div class="row">
@@ -636,7 +603,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="darken(spin(@state-info-bg, -10), 7%)" data-var="@state-info-border">
       </div>
     </div>
-
     <h2 id="variables-alerts">Alerts</h2>
     <p>Define alert colors, border radius, and padding.</p>
     <h4>Border radius</h4>
@@ -678,7 +644,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="@state-info-border" data-var="@alert-info-border">
       </div>
     </div>
-
     <h2 id="variables-navbar">Navbar</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -762,10 +727,7 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="#333" data-var="@navbar-inverse-toggle-border-color">
       </div>
     </div>
-
-
     <h2 id="variables-nav">Nav</h2>
-
     <h3>Default nav</h3>
     <div class="row">
       <div class="col-lg-6">
@@ -782,7 +744,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="#fff" data-var="@nav-open-link-hover-color">
         <label>@nav-open-caret-border-color</label>
         <input type="text" class="form-control" placeholder="@fff" data-var="@nav-open-caret-border-color">
-
         <h4>Pills</h4>
         <label>@nav-pills-active-link-hover-color</label>
         <input type="text" class="form-control" placeholder="@fff" data-var="@nav-pills-active-link-hover-color">
@@ -807,8 +768,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="@body-bg" data-var="@nav-tabs-justified-active-link-border-color">
       </div>
     </div>
-
-
     <h2 id="variables-tables">Tables</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -828,7 +787,6 @@ base_url: "../"
         <p class="help-block">Border color for table and cell borders.</p>
       </div>
     </div>
-
     <h2 id="variables-forms">Forms</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -854,13 +812,11 @@ base_url: "../"
         <label>@input-color-placeholder</label>
         <input type="text" class="form-control" placeholder="@gray-light" data-var="@input-color-placeholder">
         <p class="help-block">Placeholder text color</p>
-
         <h3>Legend</h3>
         <label>@legend-color</label>
         <input type="text" class="form-control" placeholder="@gray" data-var="@legend-color">
         <label>@legend-border-color</label>
         <input type="text" class="form-control" placeholder="#e5e5e5" data-var="@legend-border-color">
-
         <h3>Input groups</h3>
         <label>@input-group-addon-bg</label>
         <input type="text" class="form-control" placeholder="@gray-lighter" data-var="@input-group-addon-bg">
@@ -870,7 +826,6 @@ base_url: "../"
         <p class="help-block">Border color for textual input addons</p>
       </div>
     </div>
-
     <h2 id="variables-dropdowns">Dropdowns</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -899,27 +854,23 @@ base_url: "../"
         <label>@dropdown-link-color</label>
         <input type="text" class="form-control" placeholder="@gray-dark" data-var="@dropdown-link-color">
         <p class="help-block">Dropdown text color</p>
-
         <label>@dropdown-link-hover-color</label>
         <input type="text" class="form-control" placeholder="#fff" data-var="@dropdown-link-hover-color">
         <p class="help-block">Hovered dropdown menu entry text color</p>
         <label>@dropdown-link-hover-bg</label>
         <input type="text" class="form-control" placeholder="#fff" data-var="@dropdown-link-hover-bg">
         <p class="help-block">Hovered dropdown menu entry text color</p>
-
         <label>@dropdown-link-active-color</label>
         <input type="text" class="form-control" placeholder="#fff" data-var="@dropdown-link-active-color">
         <p class="help-block">Active dropdown menu entry text color</p>
         <label>@dropdown-link-active-bg</label>
         <input type="text" class="form-control" placeholder="@component-active-bg" data-var="@dropdown-link-active-bg">
         <p class="help-block">Active dropdown menu entry background color</p>
-
         <label>@dropdown-link-disabled-color</label>
         <input type="text" class="form-control" placeholder="@dropdown-link-disabled-color" data-var="@dropdown-link-disabled-color">
         <p class="help-block">Disabled dropdown menu entry background color</p>
       </div>
     </div>
-
     <h2 id="variables-panels-wells">Panels and wells</h2>
     <h3>Common panel styles</h3>
     <div class="row">
@@ -986,15 +937,12 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="@state-danger-bg" data-var="@panel-danger-heading-bg">
       </div>
     </div>
-
     <h3>Wells</h3>
     <label>@well-bg</label>
     <input type="text" class="form-control" placeholder="#f5f5f5" data-var="@well-bg">
-
     <h2 id="variables-accordion">Accordion</h2>
     <label>@accordion-border-bg</label>
     <input type="text" class="form-control" placeholder="#e5e5e5" data-var="@accordion-border-bg">
-
     <h2 id="variables-badges">Badges</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -1017,7 +965,6 @@ base_url: "../"
         <p>Badge text color in active nav link</p>
       </div>
     </div>
-
     <h2 id="variables-breadcrumbs">Breadcrumbs</h2>
     <div class="row">
       <div class="col-lg-4">
@@ -1036,7 +983,6 @@ base_url: "../"
         <p>Text color of current page in the breadcrumb</p>
       </div>
     </div>
-
     <h2 id="variables-jumbotron">Jumbotron</h2>
     <div class="row">
       <div class="col-lg-3">
@@ -1056,7 +1002,6 @@ base_url: "../"
         <input type="text" class="form-control" placeholder="inherit" data-var="@jumbotron-heading-color">
       </div>
     </div>
-
     <h2 id="variables-modals">Modals</h2>
     <div class="row">
       <div class="col-lg-4">
@@ -1105,7 +1050,6 @@ base_url: "../"
         <p class="help-block">Modal footer border color</p>
       </div>
     </div>
-
     <h2 id="variables-carousel">Carousel</h2>
     <label>@carousel-text-shadow</label>
     <input type="text" class="form-control" placeholder="0 1px 2px rgba(0,0,0,.6)" data-var="@carousel-text-shadow">
@@ -1117,7 +1061,6 @@ base_url: "../"
     <input type="text" class="form-control" placeholder="#fff" data-var="@carousel-indicator-active-bg">
     <label>@carousel-caption-color</label>
     <input type="text" class="form-control" placeholder="#fff" data-var="@carousel-caption-color">
-
     <h2 id="variables-list-group">List group</h2>
     <h3>Background</h3>
     <div class="row">
@@ -1269,7 +1212,6 @@ base_url: "../"
         <p class="help-block">Pager disabled state color</p>
       </div>
     </div>
-
     <h2 id="variables-labels">Labels</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -1373,7 +1315,6 @@ base_url: "../"
         <p class="help-block">Popover fallback border color</p>
       </div>
     </div>
-
     <h2 id="variables-close">Close button</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -1385,7 +1326,6 @@ base_url: "../"
       <input type="text" class="form-control" placeholder="0 1px 0 #fff" data-var="@close-text-shadow">
       </div>
     </div>
-
     <h2 id="variables-type">Type</h2>
     <div class="row">
       <div class="col-lg-6">
@@ -1433,14 +1373,13 @@ base_url: "../"
       </div>
     </div>
   </div>
-
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="download">Download</h1>
     </div>
     <p class="lead">Hooray! Your custom version of Bootstrap is now ready to be compiled. Just click the button below to finish the process.</p>
     <div class="bs-customize-download">
-      <button id="btn-compile" class="btn btn-block btn-lg btn-outline" onclick="_gaq.push(['_trackEvent', 'Customize', 'Download', 'Customize and Download']);">Compile and Download</button>
+      <button id="btn-compile" class="btn btn-block btn-lg btn-outline">Compile and Download</button>
     </div>
-  </div><!-- /download -->
+  </div>
 </form>

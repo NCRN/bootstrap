@@ -6,19 +6,14 @@ lead: "An overview of Bootstrap, how to download and use, basic templates and ex
 base_url: "../"
 ---
 
-
-  <!-- Getting started
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="download">Download Bootstrap</h1>
     </div>
     <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
-
     <h3 id="download-compiled">Compiled CSS, JS, and fonts</h3>
     <p>The fastest way to get Bootstrap is to download the compiled and minified versions of our CSS and JavaScript, along with the included fonts. No documentation or original source files are included.</p>
     <p><a class="btn btn-lg btn-primary" href="{{ site.download_dist }}" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download precompiled Bootstrap</a></p>
-
     <h3 id="download-additional">Additional downloads</h3>
     <div class="bs-docs-dl-options">
       <h4>
@@ -35,7 +30,6 @@ base_url: "../"
       <p>Install and manage the original files for all CSS and JavaScript, along with a local copy of the docs, using <a href="http://bower.io">Bower</a>.</p>
       {% highlight bash %}$ bower install bootstrap{% endhighlight %}
     </div>
-
     <h3 id="download-cdn">Bootstrap CDN</h3>
     <p>The folks over at <a href="https://www.netdna.com/">NetDNA</a> have graciously provided CDN support for Bootstrap's CSS and JavaScript. To use, swap your local instances for the <a href="http://www.bootstrapcdn.com/">Bootstrap CDN</a> links listed below.</p>
 {% highlight html %}
@@ -48,17 +42,11 @@ base_url: "../"
 <!-- Latest compiled and minified JavaScript -->
 <script src="{{ site.cdn_js }}"></script>
 {% endhighlight %}
-
     <div class="bs-callout bs-callout-warning" id="callout-less-compilation">
       <h4>LESS compilation</h4>
       <p>If you download the original files, you need to compile Bootstrap's LESS files into usable CSS. To do that, Bootstrap only officially supports <a href="http://twitter.github.io/recess/">Recess</a>, Twitter's CSS hinter built on top of <a href="http://lesscss.org">less.js</a>.</p>
     </div>
   </div>
-
-
-
-  <!-- File structure
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="whats-included">What's included</h1>
@@ -89,17 +77,11 @@ bootstrap/
       <p>Please note that <strong>all JavaScript plugins require jQuery</strong> to be included, as shown in the <a href="#template">starter template</a>.</p>
     </div>
   </div>
-
-
-
-  <!-- Template
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="template">Basic template</h1>
     </div>
     <p class="lead">Make use of a super basic HTML template, or dive into a <a href="../getting-started#examples">few examples</a> we've started for you. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
-
     <p>Copy and paste the HTML from below to get started with a bare bones Bootstrap document.</p>
 {% highlight html %}
 <!DOCTYPE html>
@@ -127,17 +109,11 @@ bootstrap/
 </html>
 {% endhighlight %}
   </div>
-
-
-
-  <!-- Template
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="examples">Examples</h1>
     </div>
     <p class="lead">Build on the basic template above with Bootstrap's many components. Check out some of the more advanced tips for how to customize and build on top of them.</p>
-
     <div class="row bs-examples">
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/starter-template/">
@@ -154,7 +130,6 @@ bootstrap/
         <p>Multiple examples of grid layouts with all four tiers, nesting, and more.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/jumbotron/">
           <img src="../examples/screenshots/jumbotron.jpg" alt="">
@@ -170,7 +145,6 @@ bootstrap/
         <p>Build a more custom page by narrowing the default container and jumbotron.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/navbar/">
           <img src="../examples/screenshots/navbar.jpg" alt="">
@@ -186,7 +160,6 @@ bootstrap/
         <p>Super basic template with a static top navbar along with some additional content.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/navbar-fixed-top/">
           <img src="../examples/screenshots/navbar-fixed.jpg" alt="">
@@ -202,7 +175,6 @@ bootstrap/
         <p>Custom form layout and design for a simple sign in form.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/sticky-footer/">
           <img src="../examples/screenshots/sticky-footer.jpg" alt="">
@@ -218,7 +190,6 @@ bootstrap/
         <p>Attach a footer to the bottom of the viewport with a fixed navbar at the top.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/justified-nav/">
           <img src="../examples/screenshots/justified-nav.jpg" alt="">
@@ -234,7 +205,6 @@ bootstrap/
         <p>Build a toggleable off-canvas navigation menu for use with Bootstrap.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/carousel/">
           <img src="../examples/screenshots/carousel.jpg" alt="">
@@ -250,7 +220,6 @@ bootstrap/
         <p>Easily disable the responsiveness of Bootstrap <a href="../getting-started/#disable-responsive">per our docs</a>.</p>
       </div>
       <div class="clearfix visible-xs"></div>
-
       <div class="col-xs-6 col-md-4">
         <a class="thumbnail" href="../examples/theme/">
           <img src="../examples/screenshots/theme.jpg" alt="">
@@ -259,13 +228,7 @@ bootstrap/
         <p>Load the optional Bootstrap theme for a visually enhanced experience.</p>
       </div>
     </div>
-
   </div>
-
-
-
-  <!-- Template
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="disable-responsive">Disabling responsiveness</h1>

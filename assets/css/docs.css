@@ -44,7 +44,7 @@ body {
 
 /* Outline button for use within the docs */
 .btn-outline {
-  color: #563d7c;
+  color: #476231;
   background-color: #fff;
   border-color: #e5e5e5;
 }
@@ -52,8 +52,8 @@ body {
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #476231;
+  border-color: #476231;
 }
 
 /* Inverted outline button (white on dark) */
