@@ -15,8 +15,7 @@ repo:             https://github.com/nationalparkservice/bootstrap
 download:         https://github.com/nationalparkservice/bootstrap/archive/v3.0.0.zip
 download_dist:    https://github.com/nationalparkservice/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
 
-blog:             http://blog.getbootstrap.com
-expo:             http://expo.getbootstrap.com
+blog:             http://www.nps.gov/npmap/blog
 
 cdn_css:          //www.nps.gov/npmap/tools/bootstrap/3.0.0/css/bootstrap.min.css
 cdn_theme_css:    //www.nps.gov/npmap/tools/bootstrap/3.0.0/css/bootstrap-theme.min.css
