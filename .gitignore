@@ -2,6 +2,9 @@
 _gh_pages
 _site
 
+# Ignore dist folders
+3.0.0
+
 # Numerous always-ignore extensions
 *.diff
 *.err

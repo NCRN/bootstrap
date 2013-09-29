@@ -17,6 +17,6 @@ download_dist:    https://github.com/nationalparkservice/bootstrap/releases/down
 
 blog:             http://www.nps.gov/npmap/blog
 
-cdn_css:          //www.nps.gov/npmap/tools/bootstrap/3.0.0/css/bootstrap.min.css
-cdn_theme_css:    //www.nps.gov/npmap/tools/bootstrap/3.0.0/css/bootstrap-theme.min.css
-cdn_js:           //www.nps.gov/npmap/tools/bootstrap/3.0.0/js/bootstrap.min.js
+cdn_css:          http://www.nps.gov/npmap/tools/bootstrap/3.0.0/css/nps-bootstrap.min.css
+cdn_theme_css:    http://www.nps.gov/npmap/tools/bootstrap/3.0.0/css/nps-bootstrap-theme.min.css
+cdn_js:           http://www.nps.gov/npmap/tools/bootstrap/3.0.0/js/nps-bootstrap.min.js
