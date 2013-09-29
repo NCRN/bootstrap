@@ -1,0 +1,252 @@
+html, body {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -300px;
+  padding: 0 0 300px;
+}
+#footer {
+  height: 300px;
+}
+.header {
+  background-color: #000;
+  height: 100px;
+}
+.header .container {
+  height: 100%;
+}
+.header .container .logo {
+  padding: 15px 0 0 6px;
+}
+.header .container .logo span, header .container .logo a {
+  display: block;
+  height: 51px;
+  width: 329px;
+}
+.header .container .logo a {
+  color: #000000;
+  font-size: 12px;
+  position: relative;
+}
+.header .container .logo span {
+  background: url('assets/img/chrome/logos/arrowhead.png') no-repeat scroll left top transparent;
+  cursor: pointer;
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+/*
+.header .container .navigation {
+  background-color: #485a28;
+  list-style: none outside none;
+  padding-left: 0;
+  position: absolute;
+  top: 84px;
+}
+.header .container .navigation li {
+  float: left;
+  height: 32px;
+  position: relative;
+}
+.header .container .navigation li a {
+  display: block;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+}
+.header .container .navigation li a:hover {
+  cursor: pointer;
+}
+.header .container .navigation li a span {
+  background: url('assets/img/chrome/bg/navigation.png') 0px 0px no-repeat;
+  display: block;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+.header .container .navigation li a:hover span { 
+  cursor: pointer;
+}
+.header .container .navigation li ul {
+  background: transparent url('assets/img/chrome/bg/navigation-dd-edges.png') no-repeat left bottom;
+  display: none;
+  left: -6px;
+  padding: 9px 6px 17px 6px;
+  position: absolute;
+}
+.header .container .navigation #nav_find_park a, .header .container .navigation #nav_find_park a span {
+  background-position: 0px 0px;
+  width: 107px;
+}
+.header .container .navigation #nav_find_park a:hover span, .header .container .navigation #nav_find_park:hover a span { 
+  background-position: 0px -32px; 
+}
+.header .container .navigation #nav_find_park.active a span { 
+  background-position: 0px -64px; 
+}
+
+.header .container .navigation #nav_discover a, .header .container .navigation #nav_discover a span {
+  background-position: -107px 0;
+  width: 140px;
+}
+.header .container .navigation #nav_discover a:hover span, .header .container .navigation #nav_discover:hover a span { 
+  background-position: -107px -32px;
+}
+.header .container .navigation #nav_discover.active a span {
+  background-position: -107px -64px; 
+}
+.header .container .navigation #nav_explore a, .header .container .navigation #nav_explore a span {
+    background-position: -247px 0;
+    width: 132px;
+}
+.header .container .navigation #nav_explore a:hover span, .header .container .navigation #nav_explore:hover a span { 
+  background-position: -247px -32px; 
+}
+.header .container .navigation #nav_explore.active a span { 
+  background-position: -247px -64px; 
+}
+.header .container .navigation #nav_involved a, .header .container .navigation #nav_involved a span {
+    background-position: -379px 0;
+    width:116px;
+}
+.header .container .navigation #nav_involved a:hover span, .header .container .navigation #nav_involved:hover a span { 
+  background-position: -379px -32px; 
+}
+.header .container .navigation #nav_involved.active a span { 
+  background-position: -379px -64px; 
+}
+.header .container .navigation #nav_working a, .header .container .navigation #nav_working a span {
+    background-position: -495px 0;
+    width: 212px;
+}
+.header .container .navigation #nav_working a:hover span, .header .container .navigation #nav_working:hover a span { 
+  background-position: -495px -32px; 
+}
+.header .container .navigation #nav_working.active a span  { 
+  background-position: -495px -64px; 
+}
+.header .container .navigation #nav_teachers a, .header .container .navigation #nav_teachers a span {
+    background-position: -707px 0;
+    width: 92px;
+}
+.header .container .navigation #nav_teachers a:hover span, .header .container .navigation #nav_teachers:hover a span { 
+  background-position: -707px -32px; 
+}
+.header .container .navigation #nav_teachers.active a span { 
+  background-position: -707px -64px; 
+}
+.header .container .navigation #nav_kids a, .header .container .navigation #nav_kids a span {
+    background-position: -799px 0;
+  width: 66px;
+}
+.header .container .navigation #nav_kids a:hover span, .header .container .navigation #nav_kids:hover a span { 
+  background-position: -799px -32px; 
+}
+.header .container .navigation #nav_kids.active a span { 
+  background-position: -799px -64px; 
+}
+.header .container .navigation #nav_about a, .header .container .navigation #nav_about a span {
+  background-position: -865px 0;
+  width: 95px;
+}
+.header .container .navigation #nav_about a:hover span, .header .container .navigation #nav_about:hover a span, .header .container .navigation #nav_about.active a span { 
+  background-position: -865px -32px; 
+}
+.header .container .navigation #nav_about.active a span { 
+  background-position: -865px -64px; 
+}
+.header .container .navigation #nav_about ul {
+  left: auto;
+  right: -6px;
+}
+.header .container .navigation li:hover ul, .header .container .navigation li.hover ul {
+  display: block;
+}
+.header .container .navigation li ul li {
+  height: auto; 
+}
+.header .container .navigation li ul li:first-child a, .header .container .navigation li ul li:first-child a:hover {
+  border-top: none;
+}
+.header .container .navigation li ul li a {
+  color: #5b5b5b;
+  border-top: 1px solid #e7e7e7;
+  font-size: 13px;
+  height: auto;
+  line-height: 14px;
+  margin: 0 19px 0 17px;
+  padding: 7px 0;
+  width: 136px !important;
+}
+.header .container .navigation li ul li a:hover {
+  background-color: #916800;
+  border-top: 1px solid #916800;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  padding: 7px 19px 7px 17px; 
+  text-decoration: none;
+}
+*/
+.navbar-default {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  background: #485a28;
+  background: -moz-linear-gradient(top,  #5a712d 0%, #394e22 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5a712d), color-stop(100%,#394e22));
+  background: -webkit-linear-gradient(top,  #5a712d 0%,#394e22 100%);
+  background: -o-linear-gradient(top,  #5a712d 0%,#394e22 100%);
+  background: -ms-linear-gradient(top,  #5a712d 0%,#394e22 100%);
+  background: linear-gradient(to bottom,  #5a712d 0%,#394e22 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a712d', endColorstr='#394e22',GradientType=0 );
+  border-color: transparent;
+  color: white;
+  position: absolute;
+  top: 84px;
+}
+.navbar-default .collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-default .navbar-nav > li {
+  border-left: solid 1px #516130;
+  border-right: solid 1px #516130;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret, .navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret  {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #b28000;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: #b28000;
+  color: #fff;
+}
+.main {
+  background: #f5f0dd url('assets/img/chrome/wallpapers/parks.jpg') no-repeat scroll center bottom;;
+}
+.breadcrumb {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  background-color: #918f7e;
+  height: 32px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.footer {
+  background: #000;
+  height: 268px;
+}

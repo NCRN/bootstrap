@@ -13,7 +13,7 @@ port:             9001
 # Custom vars
 repo:             https://github.com/nationalparkservice/bootstrap
 download:         https://github.com/nationalparkservice/bootstrap/archive/v3.0.0.zip
-download_dist:    https://github.com/nationalparkservice/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
+download_dist:    https://github.com/nationalparkservice/bootstrap/releases/download/v3.0.0/nps-bootstrap-3.0.0-dist.zip
 
 blog:             http://www.nps.gov/npmap/blog
 

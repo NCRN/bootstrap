@@ -6,14 +6,10 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 base_url: "../"
 ---
 
-
-  <!-- Glyphicons
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="glyphicons">Glyphicons</h1>
     </div>
-
     <h2 id="glyphicons-glyphs">Available glyphs</h2>
     <p>Includes 180 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you to include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
     <ul class="bs-glyphicons">
@@ -218,15 +214,11 @@ base_url: "../"
       <li><span class="glyphicon glyphicon-zoom-in"></span> .glyphicon .glyphicon-zoom-in</li>
       <li><span class="glyphicon glyphicon-zoom-out"></span> .glyphicon .glyphicon-zoom-out</li>
     </ul>
-
-
     <h2 id="glyphicons-how-to-use">How to use</h2>
     <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
 {% highlight html %}
 <span class="glyphicon glyphicon-search"></span>
 {% endhighlight %}
-
-
     <h2 id="glyphicons-examples">Examples</h2>
     <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
     <div class="bs-example">
@@ -250,18 +242,12 @@ base_url: "../"
   <span class="glyphicon glyphicon-star"></span> Star
 </button>
 {% endhighlight %}
-
   </div>
-
-
-  <!-- Dropdowns
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="dropdowns">Dropdowns</h1>
     </div>
     <p class="lead">Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="../javascript/#dropdowns">dropdown JavaScript plugin</a>.</p>
-
     <h3 id="dropdowns-example">Example</h3>
     <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
     <div class="bs-example">
@@ -275,10 +261,9 @@ base_url: "../"
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
         </ul>
       </div>
-    </div><!-- /example -->
+    </div>>
 {% highlight html %}
 <div class="dropdown">
-  <!-- Link or button to toggle dropdown -->
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
@@ -288,7 +273,6 @@ base_url: "../"
   </ul>
 </div>
 {% endhighlight %}
-
     <h3 id="dropdowns-alignment">Alignment options</h3>
     <p>Add <code>.pull-right</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.</p>
 {% highlight html %}
@@ -296,7 +280,6 @@ base_url: "../"
   ...
 </ul>
 {% endhighlight %}
-
     <h3 id="dropdowns-headers">Headers</h3>
     <p>Add a header to label sections of actions in any dropdown menu.</p>
     <div class="bs-example">
@@ -312,7 +295,7 @@ base_url: "../"
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
         </ul>
       </div>
-    </div><!-- /example -->
+    </div>
 {% highlight html %}
 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
   <li role="presentation" class="dropdown-header">Dropdown header</li>
@@ -322,7 +305,6 @@ base_url: "../"
   ...
 </ul>
 {% endhighlight %}
-
     <h3 id="dropdowns-disabled">Disabled menu items</h3>
     <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
     <div class="bs-example">
@@ -334,7 +316,7 @@ base_url: "../"
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
         </ul>
       </div>
-    </div><!-- /example -->
+    </div>
 {% highlight html %}
 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
@@ -343,22 +325,15 @@ base_url: "../"
 </ul>
 {% endhighlight %}
   </div>
-
-
-
-  <!-- Button Groups
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="btn-groups">Button groups</h1>
     </div>
     <p class="lead">Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="../javascript/#buttons">our buttons plugin</a>.</p>
-
     <div class="bs-callout bs-callout-info">
       <h4>Tooltips &amp; popovers in button groups require special setting</h4>
       <p>When using tooltips or popovers on elements within a <code>.btn-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
     </div>
-
     <h3 id="btn-groups-single">Basic example</h3>
     <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
     <div class="bs-example">
@@ -375,7 +350,6 @@ base_url: "../"
   <button type="button" class="btn btn-default">Right</button>
 </div>
 {% endhighlight %}
-
     <h3 id="btn-groups-toolbar">Button toolbar</h3>
     <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
     <div class="bs-example">
@@ -403,7 +377,6 @@ base_url: "../"
   <div class="btn-group">...</div>
 </div>
 {% endhighlight %}
-
     <h3 id="btn-groups-sizing">Sizing</h3>
     <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to the <code>.btn-group</code>.</p>
     <div class="bs-example">
@@ -442,14 +415,12 @@ base_url: "../"
 <div class="btn-group btn-group-sm">...</div>
 <div class="btn-group btn-group-xs">...</div>
 {% endhighlight %}
-
     <h3 id="btn-groups-nested">Nesting</h3>
     <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
     <div class="bs-example">
       <div class="btn-group">
         <button type="button" class="btn btn-default">1</button>
         <button type="button" class="btn btn-default">2</button>
-
         <div class="btn-group">
           <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             Dropdown
@@ -466,7 +437,6 @@ base_url: "../"
 <div class="btn-group">
   <button type="button" class="btn btn-default">1</button>
   <button type="button" class="btn btn-default">2</button>
-
   <div class="btn-group">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
       Dropdown
@@ -479,7 +449,6 @@ base_url: "../"
   </div>
 </div>
 {% endhighlight %}
-
     <h3 id="btn-groups-vertical">Vertical variation</h3>
     <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
     <div class="bs-example">
@@ -535,15 +504,12 @@ base_url: "../"
   ...
 </div>
 {% endhighlight %}
-
     <h3 id="btn-groups-justified">Justified link variation</h3>
     <p>Make a group of buttons stretch at the same size to span the entire width of its parent.</p>
-
     <div class="bs-callout bs-callout-warning">
       <h4>Element-specific usage</h4>
       <p>This only works with <code>&lt;a&gt;</code> elements as the <code>&lt;button&gt;</code> doesn't pick up these styles.</p>
     </div>
-
     <div class="bs-example">
       <div class="btn-group btn-group-justified">
         <a href="#" class="btn btn-default">Left</a>
@@ -556,24 +522,16 @@ base_url: "../"
   ...
 </div>
 {% endhighlight %}
-
   </div>
-
-
-
-  <!-- Split button dropdowns
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="btn-dropdowns">Button dropdowns</h1>
     </div>
     <p class="lead">Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
-
     <div class="bs-callout bs-callout-danger">
       <h4>Plugin dependency</h4>
       <p>Button dropdowns require the <a href="../javascript/#dropdowns">dropdown plugin</a> to be included in your version of Bootstrap.</p>
     </div>
-
     <h3 id="btn-dropdowns-single">Single button dropdowns</h3>
     <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
     <div class="bs-example">
@@ -586,7 +544,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -596,7 +554,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -606,7 +564,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -616,7 +574,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -626,7 +584,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
@@ -636,10 +594,9 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
     </div>
 {% highlight html %}
-<!-- Single button -->
 <div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
     Action <span class="caret"></span>
@@ -653,7 +610,6 @@ base_url: "../"
   </ul>
 </div>
 {% endhighlight %}
-
     <h3 id="btn-dropdowns-split">Split button dropdowns</h3>
     <p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
     <div class="bs-example">
@@ -667,7 +623,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -678,7 +634,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -689,7 +645,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-info">Info</button>
         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -700,7 +656,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-warning">Warning</button>
         <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -711,7 +667,7 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-danger">Danger</button>
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -722,10 +678,9 @@ base_url: "../"
           <li class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div><!-- /btn-group -->
+      </div>
     </div>
 {% highlight html %}
-<!-- Split button -->
 <div class="btn-group">
   <button type="button" class="btn btn-danger">Action</button>
   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
@@ -740,7 +695,6 @@ base_url: "../"
   </ul>
 </div>
 {% endhighlight %}
-
     <h3 id="btn-dropdowns-sizing">Sizing</h3>
     <p>Button dropdowns work with buttons of all sizes.</p>
     <div class="bs-example">
@@ -756,8 +710,8 @@ base_url: "../"
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </div><!-- /btn-group -->
-      </div><!-- /btn-toolbar -->
+        </div>
+      </div>
       <div class="btn-toolbar">
         <div class="btn-group">
           <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
@@ -770,8 +724,8 @@ base_url: "../"
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </div><!-- /btn-group -->
-      </div><!-- /btn-toolbar -->
+        </div>
+      </div>
       <div class="btn-toolbar">
         <div class="btn-group">
           <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
@@ -784,11 +738,10 @@ base_url: "../"
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </div><!-- /btn-group -->
-      </div><!-- /btn-toolbar -->
-    </div><!-- /example -->
+        </div>
+      </div>
+    </div>
 {% highlight html %}
-<!-- Large button group -->
 <div class="btn-group">
   <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
     Large button <span class="caret"></span>
@@ -797,8 +750,6 @@ base_url: "../"
     ...
   </ul>
 </div>
-
-<!-- Small button group -->
 <div class="btn-group">
   <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
     Small button <span class="caret"></span>
@@ -807,8 +758,6 @@ base_url: "../"
     ...
   </ul>
 </div>
-
-<!-- Extra small button group -->
 <div class="btn-group">
   <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
     Extra small button <span class="caret"></span>
@@ -818,7 +767,6 @@ base_url: "../"
   </ul>
 </div>
 {% endhighlight %}
-
     <h3 id="btn-dropdowns-dropup">Dropup variation</h3>
     <p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.</p>
     <div class="bs-example">
@@ -833,7 +781,7 @@ base_url: "../"
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </div><!-- /btn-group -->
+        </div>
         <div class="btn-group dropup">
           <button type="button" class="btn btn-primary">Right dropup</button>
           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
@@ -844,9 +792,9 @@ base_url: "../"
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </div><!-- /btn-group -->
+        </div>
       </div>
-    </div><!-- /example -->
+    </div>
 {% highlight html %}
 <div class="btn-group dropup">
   <button type="button" class="btn btn-default">Dropup</button>
@@ -854,24 +802,15 @@ base_url: "../"
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <!-- Dropdown menu links -->
   </ul>
 </div>
 {% endhighlight %}
-
   </div>
-
-
-
-
-  <!-- Input groups
-  ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
       <h1 id="input-groups">Input groups</h1>
     </div>
     <p class="lead">Extend form controls by adding text or buttons before, after, or on both sides of any text-based input. Use <code>.input-group</code> with an <code>.input-group-addon</code> to prepend or append elements to a <code>.form-control</code>.</p>
-
     <div class="bs-callout bs-callout-danger">
       <h4>Cross-browser compatibility</h4>
       <p>Avoid using <code>&lt;select&gt;</code> elements here as they cannot be fully styled in WebKit browsers.</p>
@@ -880,7 +819,6 @@ base_url: "../"
       <h4>Tooltips &amp; popovers in input groups require special setting</h4>
       <p>When using tooltips or popovers on elements within an <code>.input-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
     </div>
-
     <h2 id="input-groups-basic">Basic example</h2>
     <form class="bs-example bs-example-form" role="form">
       <div class="input-group">
@@ -904,20 +842,16 @@ base_url: "../"
   <span class="input-group-addon">@</span>
   <input type="text" class="form-control" placeholder="Username">
 </div>
-
 <div class="input-group">
   <input type="text" class="form-control">
   <span class="input-group-addon">.00</span>
 </div>
-
 <div class="input-group">
   <span class="input-group-addon">$</span>
   <input type="text" class="form-control">
   <span class="input-group-addon">.00</span>
 </div>
 {% endhighlight %}
-
-
     <h2 id="input-groups-sizing">Sizing</h2>
     <p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
     <form class="bs-example bs-example-form" role="form">
@@ -941,19 +875,15 @@ base_url: "../"
   <span class="input-group-addon">@</span>
   <input type="text" class="form-control input-lg" placeholder="Username">
 </div>
-
 <div class="input-group">
   <span class="input-group-addon">@</span>
   <input type="text" class="form-control" placeholder="Username">
 </div>
-
 <div class="input-group input-group-sm">
   <span class="input-group-addon">@</span>
   <input type="text" class="form-control" placeholder="Username">
 </div>
 {% endhighlight %}
-
-
     <h2 id="input-groups-checkboxes-radios">Checkboxes and radio addons</h2>
     <p>Place any checkbox or radio option within an input group's addon instead of text.</p>
     <form class="bs-example bs-example-form">
