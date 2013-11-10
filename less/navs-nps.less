@@ -67,18 +67,14 @@
 // Tabs
 // -------------------------
 
-// Give the tabs something to sit on
 .nav-tabs {
   border-bottom: 1px solid @nav-tabs-border-color;
   > li {
-    background-color: #efece3;
     float: left;
-    // Make the list-items overlay the bottom border
     margin-bottom: -1px;
     margin-left: 5px;
-
-    // Actual tabs (as links)
     > a {
+      background-color: #efece3;
       color: @text-color;
       font-size: 13px;
       font-weight: bold;
@@ -91,12 +87,9 @@
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
       }
     }
-
     &:first-child {
       margin-left: 0;
     }
-
-    // Active state, and it's :hover to override normal :hover
     &.active > a {
       &,
       &:hover,
@@ -109,7 +102,6 @@
       }
     }
   }
-  // pulling this in mainly for less shorthand
   &.nav-justified {
     .nav-justified();
     .nav-tabs-justified();
@@ -205,10 +197,8 @@
 
 .tab-content {
   background-color: @body-bg;
+  padding: 20px 18px;
 }
-  .tab-content > .tab-pane {
-    padding: 24px 15px;
-  }
 // Show/hide tabbable areas
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {

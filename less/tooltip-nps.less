@@ -22,13 +22,13 @@
 
 // Wrapper for the tooltip content
 .tooltip-inner {
+  .border-radius(@baseBorderRadius);
+  background-color: @tooltipBackground;
+  color: @tooltipColor;
   max-width: 200px;
   padding: 8px;
-  color: @tooltipColor;
   text-align: center;
   text-decoration: none;
-  background-color: @tooltipBackground;
-  .border-radius(@baseBorderRadius);
 }
 
 // Arrows

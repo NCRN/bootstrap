@@ -54,9 +54,15 @@
   .size(@size; @size);
 }
 .tab-focus() {
+  /*
   outline: thin dotted #333;
   outline: 5px auto rgba(89, 114, 52, 0.8);
   outline-offset: -2px;
+  */
+
+  outline: -webkit-focus-ring-color auto 5px !important;
+  outline-offset: 2px !important;
+  outline: 2px solid #029dd3;
 }
 .text-overflow() {
   overflow: hidden;
