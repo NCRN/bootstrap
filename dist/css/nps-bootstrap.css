@@ -335,9 +335,8 @@ a:focus {
 }
 
 a:focus {
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline: -webkit-focus-ring-color auto !important;
   outline: 2px solid #029dd3;
-  outline-offset: 2px !important;
 }
 
 img {
@@ -1649,6 +1648,13 @@ label {
   font-weight: bold;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 input[type="search"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1682,9 +1688,8 @@ select optgroup {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline: -webkit-focus-ring-color auto !important;
   outline: 2px solid #029dd3;
-  outline-offset: 2px !important;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -1722,19 +1727,15 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border: 1px solid #d9d1d7;
+  border-radius: 3px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
           transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 .form-control:focus {
-  border-color: #597234;
+  border-color: #a0a0a0;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(89, 114, 52, 0.8);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(89, 114, 52, 0.8);
 }
 
 .form-control[disabled],
@@ -2014,9 +2015,8 @@ textarea.input-lg {
 }
 
 .btn:focus {
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline: -webkit-focus-ring-color auto !important;
   outline: 2px solid #029dd3;
-  outline-offset: 2px !important;
 }
 
 .btn:hover,
@@ -3764,7 +3764,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d1d7;
   border-radius: 4px;
 }
 

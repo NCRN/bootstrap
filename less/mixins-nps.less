@@ -54,14 +54,7 @@
   .size(@size; @size);
 }
 .tab-focus() {
-  /*
-  outline: thin dotted #333;
-  outline: 5px auto rgba(89, 114, 52, 0.8);
-  outline-offset: -2px;
-  */
-
-  outline: -webkit-focus-ring-color auto 5px !important;
-  outline-offset: 2px !important;
+  outline: -webkit-focus-ring-color auto !important;
   outline: 2px solid #029dd3;
 }
 .text-overflow() {
@@ -611,9 +604,8 @@
 
 .form-control-focus(@color: @input-border-focus) {
   &:focus {
-    border-color: rgba(89, 114, 52, 1);
+    border-color: @color;
     outline: 0;
-    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(89, 114, 52, 0.8)");
   }
 }
 .form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
