@@ -6,6 +6,7 @@
   .box-shadow(0 1px 1px rgba(0,0,0,.05));
 }
 .panel-body {
+  overflow: auto;
   padding: 15px;
   .clearfix();
 }
@@ -51,6 +52,12 @@
     color: inherit;
   }
 }
+  .panel-title .glyphicon {
+    float: right;
+  }
+    .panel-title .glyphicon-chevron-right {
+      margin-top: -2px;
+    }
 .panel-footer {
   padding: 10px 15px;
   background-color: @panel-footer-bg;

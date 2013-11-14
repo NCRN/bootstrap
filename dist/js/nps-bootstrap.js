@@ -558,12 +558,20 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     this.transitioning = 1
 
     var complete = function () {
+      
+
       this.$element
         .removeClass('collapsing')
         .addClass('in')
         [dimension]('auto')
       this.transitioning = 0
       this.$element.trigger('shown.bs.collapse')
+    }
+
+    var $span = this.$element.parent().find('.accordion-toggle').next();
+
+    if ($span && $span.hasClass('glyphicon')) {
+      $span.removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right')
     }
 
     if (!$.support.transition) return complete.call(this)
@@ -602,6 +610,12 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
         .trigger('hidden.bs.collapse')
         .removeClass('collapsing')
         .addClass('collapse')
+    }
+
+    var $span = this.$element.parent().find('.accordion-toggle').next();
+
+    if ($span && $span.hasClass('glyphicon')) {
+      $span.removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down')
     }
 
     if (!$.support.transition) return complete.call(this)
@@ -660,7 +674,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     var $parent = parent && $(parent)
 
     if (!data || !data.transitioning) {
-      if ($parent) $parent.find('[data-toggle=collapse][data-parent="' + parent + '"]').not($this).addClass('collapsed')
+      $parent && $parent.find('[data-toggle=collapse][data-parent="' + parent + '"]').not($this).addClass('collapsed')
       $this[$target.hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
     }
 
