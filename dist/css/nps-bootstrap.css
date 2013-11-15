@@ -5874,18 +5874,8 @@ body.modal-open,
 }
 
 .tooltip.in {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-.tooltip.top {
-  padding: 5px 0;
-  margin-top: -3px;
-}
-
-.tooltip.right {
-  padding: 0 5px;
-  margin-left: 3px;
+  opacity: 100;
+  filter: alpha(opacity=10000);
 }
 
 .tooltip.bottom {
@@ -5893,87 +5883,136 @@ body.modal-open,
   margin-top: 3px;
 }
 
+.tooltip.bottom .tooltip-inner {
+  margin-top: -6px;
+}
+
 .tooltip.left {
   padding: 0 5px;
   margin-left: -3px;
 }
 
-.tooltip-inner {
-  max-width: 200px;
-  padding: 3px 8px;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  background-color: #000000;
-  border-radius: 4px;
+.tooltip.left .tooltip-inner {
+  margin-right: -6px;
 }
 
-.tooltip-arrow {
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+.tooltip.right .tooltip-inner {
+  margin-left: -6px;
+}
+
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -10px;
+}
+
+.tooltip.top .tooltip-inner {
+  margin-bottom: -6px;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 7px 9px;
+  color: #464646;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #bebebe;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 0 0 3px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 0 0 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.tooltip-arrow,
+.tooltip-arrow:after {
   position: absolute;
+  display: block;
   width: 0;
   height: 0;
   border-color: transparent;
   border-style: solid;
 }
 
+.tooltip-arrow {
+  border-width: 11px;
+}
+
+.tooltip-arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
 .tooltip.top .tooltip-arrow {
-  bottom: 0;
+  bottom: -11px;
   left: 50%;
-  margin-left: -5px;
-  border-top-color: #000000;
-  border-width: 5px 5px 0;
+  margin-left: -11px;
+  border-top-color: #999999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0;
 }
 
-.tooltip.top-left .tooltip-arrow {
-  bottom: 0;
-  left: 5px;
-  border-top-color: #000000;
-  border-width: 5px 5px 0;
-}
-
-.tooltip.top-right .tooltip-arrow {
-  right: 5px;
-  bottom: 0;
-  border-top-color: #000000;
-  border-width: 5px 5px 0;
+.tooltip.top .tooltip-arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  border-top-color: #ffffff;
+  border-bottom-width: 0;
+  content: " ";
 }
 
 .tooltip.right .tooltip-arrow {
   top: 50%;
-  left: 0;
-  margin-top: -5px;
-  border-right-color: #000000;
-  border-width: 5px 5px 5px 0;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+.tooltip.right .tooltip-arrow:after {
+  bottom: -10px;
+  left: 1px;
+  border-right-color: #ffffff;
+  border-left-width: 0;
+  content: " ";
 }
 
 .tooltip.left .tooltip-arrow {
   top: 50%;
-  right: 0;
-  margin-top: -5px;
-  border-left-color: #000000;
-  border-width: 5px 0 5px 5px;
+  right: -11px;
+  margin-top: -11px;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  border-right-width: 0;
+}
+
+.tooltip.left .tooltip-arrow:after {
+  right: 1px;
+  bottom: -10px;
+  border-left-color: #ffffff;
+  border-right-width: 0;
+  content: " ";
 }
 
 .tooltip.bottom .tooltip-arrow {
-  top: 0;
+  top: -11px;
   left: 50%;
-  margin-left: -5px;
-  border-bottom-color: #000000;
-  border-width: 0 5px 5px;
+  margin-left: -11px;
+  border-bottom-color: #999999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 0;
 }
 
-.tooltip.bottom-left .tooltip-arrow {
-  top: 0;
-  left: 5px;
-  border-bottom-color: #000000;
-  border-width: 0 5px 5px;
-}
-
-.tooltip.bottom-right .tooltip-arrow {
-  top: 0;
-  right: 5px;
-  border-bottom-color: #000000;
-  border-width: 0 5px 5px;
+.tooltip.bottom .tooltip-arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  border-bottom-color: #ffffff;
+  border-top-width: 0;
+  content: " ";
 }
 
 .popover {
