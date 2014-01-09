@@ -6,17 +6,25 @@ pygments:         true
 permalink:        pretty
 
 # Server
+source:           ./docs
 destination:      ./_gh_pages
-exclude:          [".editorconfig", ".gitignore", ".ruby-version", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less"]
+host:             0.0.0.0
 port:             9001
+baseurl:          /
+url:              http://localhost:9001
 
 # Custom vars
+current_version:  3.0.3
 repo:             https://github.com/nationalparkservice/bootstrap
-download:         https://github.com/nationalparkservice/bootstrap/archive/v3.0.0.zip
-download_dist:    https://github.com/nationalparkservice/bootstrap/releases/download/v3.0.0/nps-bootstrap-3.0.0-dist.zip
+sass_repo:        https://github.com/twbs/bootstrap-sass
+
+download:
+  source:         https://github.com/nationalparkservice/bootstrap/archive/v3.0.0.zip
+  dist:           https://github.com/nationalparkservice/bootstrap/releases/download/v3.0.0/nps-bootstrap-3.0.0-dist.zip
 
 blog:             http://www.nps.gov/npmap/blog
 
-cdn_css:          http://www.nps.gov/npmap/tools/bootstrap/3.0.0/css/nps-bootstrap.min.css
-cdn_theme_css:    http://www.nps.gov/npmap/tools/bootstrap/3.0.0/css/nps-bootstrap-theme.min.css
-cdn_js:           http://www.nps.gov/npmap/tools/bootstrap/3.0.0/js/nps-bootstrap.min.js
+cdn:
+  css:            http://www.nps.gov/npmap/tools/bootstrap/3.0.0/css/nps-bootstrap.min.css
+  css_theme:      http://www.nps.gov/npmap/tools/bootstrap/3.0.0/css/nps-bootstrap-theme.min.css
+  js:             http://www.nps.gov/npmap/tools/bootstrap/3.0.0/js/nps-bootstrap.min.js

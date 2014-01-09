@@ -1,24 +1,29 @@
 {
-    "name": "nationalparkservice/bootstrap"
-  , "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. Designed to fit into the graphic identity of the National Park Service."
-  , "keywords": ["bootstrap", "css", "javascript", "national park service", "npmap"]
-  , "homepage": "http://www.nps.gov/npmap/tools/bootstrap"
-  , "authors": [
-      {
-        "name": "Mark Otto",
-        "email": "markdotto@gmail.com"
-      },
-      {
-        "name": "Jacob Thornton",
-        "email": "jacobthornton@gmail.com"
-      },
-      {
-        "name": "Nate Irwin",
-        "email": "nate_irwin@nps.gov"
-      }
-    ]
-  , "support": {
-      "issues": "https://github.com/nationalparkservice/bootstrap/issues"
+  "name": "nationalparkservice/bootstrap",
+  "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. Designed to fit into the graphic identity of the National Park Service.",
+  "keywords": ["bootstrap", "css", "javascript", "national park service", "npmap"],
+  "homepage": "http://www.nps.gov/npmap/tools/bootstrap",
+  "authors": [
+    {
+      "name": "Mark Otto",
+      "email": "markdotto@gmail.com"
+    },
+    {
+      "name": "Jacob Thornton",
+      "email": "jacobthornton@gmail.com"
+    },
+    {
+      "name": "Nate Irwin",
+      "email": "nate_irwin@nps.gov"
     }
-  , "license": "Apache-2.0"
+  ],
+  "support": {
+    "issues": "https://github.com/nationalparkservice/bootstrap/issues"
+  },
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    }
+  }
 }
