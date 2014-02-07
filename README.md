@@ -11,3 +11,15 @@ Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and
 To get started, check out [http://www.nps.gov/npmap/tools/bootstrap](http://www.nps.gov/npmap/tools/bootstrap)!
 
 **Note:** The names of files that contain NPS customizations end with <code>-nps</code>.
+
+## Build
+
+1. Clone repository: `git clone https://github.com/nationalparkservice/bootstrap`
+2. `cd bootstrap`
+3. Install [Node.js](http://nodejs.org/download/)
+4. `npm install`
+5. `grunt dist` will build the docs, CSS, and JavaScript in the `dist` directory
+
+## Support
+
+[![Gitter chat](https://badges.gitter.im/nationalparkservice/bootstrap.png)](https://gitter.im/nationalparkservice/bootstrap)
