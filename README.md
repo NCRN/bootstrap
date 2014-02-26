@@ -19,7 +19,3 @@ To get started, check out [http://www.nps.gov/npmap/bootstrap/getting-started/](
 3. Install [Node.js](http://nodejs.org/download/)
 4. `npm install`
 5. `grunt dist` will build the docs, CSS, and JavaScript in the `dist` directory
-
-## Support
-
-[![Gitter chat](https://badges.gitter.im/nationalparkservice/bootstrap.png)](https://gitter.im/nationalparkservice/bootstrap)
