@@ -8,7 +8,7 @@
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework that makes web development faster and easier. It is created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat). This version is customized by the [National Park Service](http://www.nps.gov) to fit into the agency's graphic identity.
 
-To get started, check out [http://www.nps.gov/npmap/bootstrap](http://www.nps.gov/npmap/tools/bootstrap)!
+To get started, check out [http://www.nps.gov/npmap/bootstrap/getting-started/](http://www.nps.gov/npmap/bootstrap/getting-started/)!
 
 **Note:** All National Park Service customizations reside in files that end with <code>-nps</code>.
 
