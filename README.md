@@ -18,4 +18,5 @@ To get started, check out [http://www.nps.gov/npmap/bootstrap/getting-started/](
 2. `cd bootstrap`
 3. Install [Node.js](http://nodejs.org/download)
 4. `npm install`
-5. `grunt dist` will build the docs, CSS, and JavaScript in the `dist` directory
+5. Install Grunt: `npm install -g grunt-cli`
+6. `grunt dist` will build the docs, CSS, and JavaScript in the `dist` directory
