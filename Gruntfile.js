@@ -212,16 +212,23 @@ module.exports = function (grunt) {
         src: ['fonts/*'],
         dest: 'dist/'
       },
+      images: {
+        expand: true,
+        src: ['img/*'],
+        dest: 'dist/'
+      },
       docs: {
         expand: true,
         cwd: './dist',
         src: [
           '{css,js}/*.min.*',
           'css/*.map',
-          'fonts/*'
+          'fonts/*',
+          'img/*'
         ],
         dest: 'docs/dist'
-      }
+      },
+
     },
 
     qunit: {
@@ -351,7 +358,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-docs', ['copy:docs']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy:fonts', 'dist-docs', 'dist-js']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy:fonts', 'copy:images', 'dist-docs', 'dist-js']);
 
   // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data', 'build-customizer']);
