@@ -10,7 +10,7 @@ Bootstrap is a sleek, intuitive, and powerful front-end framework that makes web
 
 To get started, check out [http://www.nps.gov/npmap/bootstrap/getting-started/](http://www.nps.gov/npmap/bootstrap/getting-started/)!
 
-**Note:** All National Park Service customizations reside in files that end with <code>-nps</code>.
+**Note:** All National Park Service customizations reside in files that end with `-nps`.
 
 ## Build
 
