@@ -1,8 +1,17 @@
 {
-  "name": "nationalparkservice/bootstrap",
-  "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. Designed to fit into the graphic identity of the National Park Service.",
-  "keywords": ["bootstrap", "css", "javascript", "national park service", "npmap"],
-  "homepage": "http://www.nps.gov/npmap/tools/bootstrap",
+  "name": "nps/bootstrap",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://www.nps.gov/npmap/tools/bootstrap/",
   "authors": [
     {
       "name": "Mark Otto",
@@ -11,10 +20,6 @@
     {
       "name": "Jacob Thornton",
       "email": "jacobthornton@gmail.com"
-    },
-    {
-      "name": "Nate Irwin",
-      "email": "nate_irwin@nps.gov"
     }
   ],
   "support": {
@@ -23,7 +28,10 @@
   "license": "MIT",
   "extra": {
     "branch-alias": {
-      "dev-master": "3.0.x-dev"
+      "dev-master": "3.2.x-dev"
     }
+  },
+  "replace": {
+    "twitter/bootstrap": "self.version"
   }
 }

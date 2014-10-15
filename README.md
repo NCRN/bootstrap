@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <img src="http://www.nps.gov/npmap/img/nps-arrowhead-medium.png" alt="NPS Arrowhead">
 </p>

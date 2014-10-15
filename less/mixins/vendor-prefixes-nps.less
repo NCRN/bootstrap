@@ -1,0 +1,17 @@
+@import "vendor-prefixes.less";
+
+.placeholder(@color: @input-color-placeholder) {
+  &::-moz-placeholder {
+    color: @color;
+    font-style: italic;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+    font-style: italic;
+  }
+  &::-webkit-input-placeholder {
+    color: @color;
+    font-style: italic;
+  }
+}
