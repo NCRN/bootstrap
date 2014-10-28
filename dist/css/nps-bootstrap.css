@@ -2,7 +2,7 @@
  * NPS Bootstrap v3.2.0 (http://www.nps.gov/npmap/tools/bootstrap/)
  * Copyright 2011-2014 Twitter, Inc. and the National Park Service
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Built on 10/16/2014 at 01:44PM MDT
+ * Built on 10/28/2014 at 02:01PM MDT
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -1400,12 +1400,12 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 990px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 990px;
   }
 }
 .container-fluid {
