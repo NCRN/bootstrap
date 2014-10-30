@@ -2,7 +2,7 @@
  * NPS Bootstrap v3.2.0 (http://www.nps.gov/npmap/tools/bootstrap/)
  * Copyright 2011-2014 Twitter, Inc. and the National Park Service
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Built on 10/30/2014 at 12:22PM MDT
+ * Built on 10/30/2014 at 04:02PM MDT
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -4532,6 +4532,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     background: linear-gradient(to bottom, #b66619 0%, #804812 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b66619', endColorstr='#804812',GradientType=0 );
     */
+}
+.navbar-brand {
+  line-height: 18px;
 }
 .breadcrumb {
   padding: 8px 15px;
