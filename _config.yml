@@ -10,24 +10,24 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-baseurl:          /
-url:              http://www.nps.gov/npmap/tools/bootstrap/
+baseurl:          /npmap/bootstrap/3.2.0
+url:              http://www.nps.gov/npmap/bootstrap/3.2.0/
 encoding:         UTF-8
 
 # Custom vars
 current_version:  3.2.0
 repo:             https://github.com/nationalparkservice/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
+sass_repo:        
 
 download:
   source:         https://github.com/nationalparkservice/bootstrap/archive/v3.2.0.zip
   dist:           https://github.com/nationalparkservice/bootstrap/releases/download/v3.2.0/bootstrap-3.2.0-dist.zip
-  sass:           https://github.com/nationalparkservice/bootstrap-sass/archive/v3.2.0.tar.gz
+  sass:           
 
 blog:             http://www.nps.gov/npmap/blog
-expo:             http://expo.getbootstrap.com
+expo:             
 
 cdn:
-  css:            https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
-  css_theme:      https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css
-  js:             https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js
+  css:            http://www.nps.gov/npmap/bootstrap/3.2.0/dist/css/nps-bootstrap.min.css
+  css_theme:      http://www.nps.gov/npmap/bootstrap/3.2.0/dist/css/nps-bootstrap-theme.min.css
+  js:             http://www.nps.gov/npmap/bootstrap/3.2.0/dist/js/nps-bootstrap.min.js
