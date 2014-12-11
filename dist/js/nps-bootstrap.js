@@ -2,7 +2,7 @@
  * NPS Bootstrap v3.2.0 (http://www.nps.gov/npmap/tools/bootstrap/)
  * Copyright 2011-2014 Twitter, Inc. and the National Park Service
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Built on 10/30/2014 at 04:02PM MDT
+ * Built on 12/11/2014 at 02:16PM MST
  */
 
 if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }
