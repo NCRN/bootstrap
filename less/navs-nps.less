@@ -1,5 +1,15 @@
 @import "less/navs.less";
 
+.nav {
+  > li {
+    &.disabled > a {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
 .nav-tabs {
   > li {
     margin-left: 5px;
