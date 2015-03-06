@@ -2,7 +2,7 @@
  * NPS Bootstrap v3.2.0 (http://www.nps.gov/npmap/tools/bootstrap/)
  * Copyright 2011-2015 Twitter, Inc. and the National Park Service
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Built on 03/05/2015 at 05:18PM MST
+ * Built on 03/05/2015 at 09:34PM MST
  */
 
 if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }
@@ -1467,11 +1467,19 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   }
 
   Tooltip.prototype.tip = function () {
-    return this.$tip = this.$tip || $(this.options.template)
+    if (this.$tip) {
+      return this.$tip;
+    } else {
+      return $(this.options.template);
+    }
   }
 
   Tooltip.prototype.arrow = function () {
-    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow')
+    if (this.$arrow) {
+      return this.$arrow;
+    } else {
+      return this.tip().find('.tooltip-arrow');
+    }
   }
 
   Tooltip.prototype.validate = function () {
