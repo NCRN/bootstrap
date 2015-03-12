@@ -1,13 +1,8 @@
 /*!
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
- * NPS Bootstrap v3.2.0 (http://www.nps.gov/npmap/tools/bootstrap/)
- * Copyright 2011-2014 Twitter, Inc. and the National Park Service
-=======
- * Bootstrap v3.3.2 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
+ * NPS Bootstrap v3.3.2 (http://www.nps.gov/npmap/tools/bootstrap/)
+ * Copyright 2011-2015 Twitter, Inc. and the National Park Service
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Built on 10/30/2014 at 04:02PM MDT
+ * Built on 03/12/2015 at 12:49PM MDT
  */
 
 if (typeof jQuery === 'undefined') {
@@ -533,10 +528,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: collapse.js v3.3.2
+ * Bootstrap: collapse.js v3.2.0
  * http://getbootstrap.com/javascript/#collapse
  * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
+ * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -550,20 +545,13 @@ if (typeof jQuery === 'undefined') {
   var Collapse = function (element, options) {
     this.$element      = $(element)
     this.options       = $.extend({}, Collapse.DEFAULTS, options)
-    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
-                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
     this.transitioning = null
 
-    if (this.options.parent) {
-      this.$parent = this.getParent()
-    } else {
-      this.addAriaAndCollapsedClass(this.$element, this.$trigger)
-    }
-
+    if (this.options.parent) this.$parent = $(this.options.parent)
     if (this.options.toggle) this.toggle()
   }
 
-  Collapse.VERSION  = '3.3.2'
+  Collapse.VERSION  = '3.2.0'
 
   Collapse.TRANSITION_DURATION = 350
 
@@ -579,21 +567,17 @@ if (typeof jQuery === 'undefined') {
   Collapse.prototype.show = function () {
     if (this.transitioning || this.$element.hasClass('in')) return
 
-    var activesData
-    var actives = this.$parent && this.$parent.children('.panel').children('.in, .collapsing')
-
-    if (actives && actives.length) {
-      activesData = actives.data('bs.collapse')
-      if (activesData && activesData.transitioning) return
-    }
-
     var startEvent = $.Event('show.bs.collapse')
     this.$element.trigger(startEvent)
     if (startEvent.isDefaultPrevented()) return
 
+    var actives = this.$parent && this.$parent.find('> .panel').children('.in, .collapsing')
+
     if (actives && actives.length) {
+      var hasData = actives.data('bs.collapse')
+      if (hasData && hasData.transitioning) return
       Plugin.call(actives, 'hide')
-      activesData || actives.data('bs.collapse', null)
+      hasData || actives.data('bs.collapse', null)
     }
 
     var dimension = this.dimension()
@@ -601,10 +585,6 @@ if (typeof jQuery === 'undefined') {
     this.$element
       .removeClass('collapse')
       .addClass('collapsing')[dimension](0)
-      .attr('aria-expanded', true)
-
-    this.$trigger
-      .removeClass('collapsed')
       .attr('aria-expanded', true)
 
     this.transitioning = 1
@@ -651,10 +631,6 @@ if (typeof jQuery === 'undefined') {
       .removeClass('collapse in')
       .attr('aria-expanded', false)
 
-    this.$trigger
-      .addClass('collapsed')
-      .attr('aria-expanded', false)
-
     this.transitioning = 1
 
     var complete = function () {
@@ -685,33 +661,6 @@ if (typeof jQuery === 'undefined') {
     this[this.$element.hasClass('in') ? 'hide' : 'show']()
   }
 
-  Collapse.prototype.getParent = function () {
-    return $(this.options.parent)
-      .find('[data-toggle="collapse"][data-parent="' + this.options.parent + '"]')
-      .each($.proxy(function (i, element) {
-        var $element = $(element)
-        this.addAriaAndCollapsedClass(getTargetFromTrigger($element), $element)
-      }, this))
-      .end()
-  }
-
-  Collapse.prototype.addAriaAndCollapsedClass = function ($element, $trigger) {
-    var isOpen = $element.hasClass('in')
-
-    $element.attr('aria-expanded', isOpen)
-    $trigger
-      .toggleClass('collapsed', !isOpen)
-      .attr('aria-expanded', isOpen)
-  }
-
-  function getTargetFromTrigger($trigger) {
-    var href
-    var target = $trigger.attr('data-target')
-      || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
-
-    return $(target)
-  }
-
 
   // COLLAPSE PLUGIN DEFINITION
   // ==========================
@@ -722,7 +671,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.collapse')
       var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
-      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
+      if (!data && options.toggle && option == 'show') options.toggle = false
       if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -747,13 +696,22 @@ if (typeof jQuery === 'undefined') {
   // =================
 
   $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function (e) {
+    var href
     var $this   = $(this)
-
-    if (!$this.attr('data-target')) e.preventDefault()
-
-    var $target = getTargetFromTrigger($this)
+    var target  = $this.attr('data-target')
+        || e.preventDefault()
+        || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
+    var $target = $(target)
     var data    = $target.data('bs.collapse')
     var option  = data ? 'toggle' : $this.data()
+    var parent  = $this.attr('data-parent')
+    var $parent = parent && $(parent)
+
+    if (!data || !data.transitioning) {
+      if ($parent) $parent.find('[data-toggle="collapse"][data-parent="' + parent + '"]').not($this).addClass('collapsed').attr('aria-expanded', false)
+      var isCollapsed = $target.hasClass('in')
+      $this.toggleClass('collapsed', isCollapsed).attr('aria-expanded', !isCollapsed)
+    }
 
     Plugin.call($target, option)
   })
@@ -1263,7 +1221,6 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
  * Bootstrap: tooltip.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
@@ -1281,40 +1238,25 @@ if (typeof jQuery === 'undefined') {
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-=======
- * Bootstrap: tooltip.js v3.3.2
- * http://getbootstrap.com/javascript/#tooltip
- * Inspired by the original jQuery.tipsy by Jason Frame
- * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
  * ======================================================================== */
 
 
-+function ($) { "use strict";
++function ($) { 'use strict';
 
   // TOOLTIP PUBLIC CLASS DEFINITION
   // ===============================
 
   var Tooltip = function (element, options) {
-    this.type       = null
-    this.options    = null
-    this.enabled    = null
-    this.timeout    = null
-    this.hoverState = null
+    this.type       =
+    this.options    =
+    this.enabled    =
+    this.timeout    =
+    this.hoverState =
     this.$element   = null
 
     this.init('tooltip', element, options)
   }
 
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
-=======
-  Tooltip.VERSION  = '3.3.2'
-
-  Tooltip.TRANSITION_DURATION = 150
-
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
   Tooltip.DEFAULTS = {
     animation: true,
     placement: 'top',
@@ -1332,10 +1274,6 @@ if (typeof jQuery === 'undefined') {
     this.type     = type
     this.$element = $(element)
     this.options  = this.getOptions(options)
-
-    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
-    }
 
     var triggers = this.options.trigger.split(' ')
 
@@ -1417,7 +1355,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Tooltip.prototype.show = function () {
-    var e = $.Event('show.bs.'+ this.type)
+    var e = $.Event('show.bs.' + this.type)
 
     if (this.hasContent() && this.enabled) {
       this.$element.trigger(e)
@@ -1452,7 +1390,6 @@ if (typeof jQuery === 'undefined') {
       if (autoPlace) {
         var $parent = this.$element.parent()
 
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
         var orgPlacement = placement
         var docScroll    = document.documentElement.scrollTop || document.body.scrollTop
         var parentWidth  = this.options.container == 'body' ? window.innerWidth  : $parent.outerWidth()
@@ -1463,12 +1400,6 @@ if (typeof jQuery === 'undefined') {
                     placement == 'top'    && pos.top   - docScroll   - actualHeight < 0                         ? 'bottom' :
                     placement == 'right'  && pos.right + actualWidth > parentWidth                              ? 'left'   :
                     placement == 'left'   && pos.left  - actualWidth < parentLeft                               ? 'right'  :
-=======
-        placement = placement == 'bottom' && pos.bottom + actualHeight > containerDim.bottom ? 'top'    :
-                    placement == 'top'    && pos.top    - actualHeight < containerDim.top    ? 'bottom' :
-                    placement == 'right'  && pos.right  + actualWidth  > containerDim.width  ? 'left'   :
-                    placement == 'left'   && pos.left   - actualWidth  < containerDim.left   ? 'right'  :
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
                     placement
 
         $tip
@@ -1479,28 +1410,11 @@ if (typeof jQuery === 'undefined') {
       var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
 
       this.applyPlacement(calculatedOffset, placement)
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
       this.$element.trigger('shown.bs.' + this.type)
-=======
-
-      var complete = function () {
-        var prevHoverState = that.hoverState
-        that.$element.trigger('shown.bs.' + that.type)
-        that.hoverState = null
-
-        if (prevHoverState == 'out') that.leave(that)
-      }
-
-      $.support.transition && this.$tip.hasClass('fade') ?
-        $tip
-          .one('bsTransitionEnd', complete)
-          .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-        complete()
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
     }
   }
 
-  Tooltip.prototype.applyPlacement = function(offset, placement) {
+  Tooltip.prototype.applyPlacement = function (offset, placement) {
     var replace
     var $tip   = this.tip()
     var width  = $tip[0].offsetWidth
@@ -1551,15 +1465,8 @@ if (typeof jQuery === 'undefined') {
     if (replace) $tip.offset(offset)
   }
 
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
-  Tooltip.prototype.replaceArrow = function(delta, dimension, position) {
-    this.arrow().css(position, delta ? (50 * (1 - delta / dimension) + "%") : '')
-=======
-  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
-    this.arrow()
-      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
-      .css(isVertical ? 'top' : 'left', '')
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
+  Tooltip.prototype.replaceArrow = function (delta, dimension, position) {
+    this.arrow().css(position, delta ? (50 * (1 - delta / dimension) + '%') : '')
   }
 
   Tooltip.prototype.setContent = function () {
@@ -1572,7 +1479,7 @@ if (typeof jQuery === 'undefined') {
 
   Tooltip.prototype.hide = function () {
     var that = this
-    var $tip = $(this.$tip)
+    var $tip = this.tip()
     var e    = $.Event('hide.bs.' + this.type)
 
     function complete() {
@@ -1585,7 +1492,7 @@ if (typeof jQuery === 'undefined') {
 
     $tip.removeClass('in')
 
-    $.support.transition && $tip.hasClass('fade') ?
+    $.support.transition && this.$tip.hasClass('fade') ?
       $tip
         .one($.support.transition.end, complete)
         .emulateTransitionEnd(150) :
@@ -1616,43 +1523,10 @@ if (typeof jQuery === 'undefined') {
   }
 
   Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
-    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2  } :
+           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2  } :
            placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
         /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width   }
-=======
-        /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
-
-  }
-
-  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
-    var delta = { top: 0, left: 0 }
-    if (!this.$viewport) return delta
-
-    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
-    var viewportDimensions = this.getPosition(this.$viewport)
-
-    if (/right|left/.test(placement)) {
-      var topEdgeOffset    = pos.top - viewportPadding - viewportDimensions.scroll
-      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight
-      if (topEdgeOffset < viewportDimensions.top) { // top overflow
-        delta.top = viewportDimensions.top - topEdgeOffset
-      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
-        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset
-      }
-    } else {
-      var leftEdgeOffset  = pos.left - viewportPadding
-      var rightEdgeOffset = pos.left + viewportPadding + actualWidth
-      if (leftEdgeOffset < viewportDimensions.left) { // left overflow
-        delta.left = viewportDimensions.left - leftEdgeOffset
-      } else if (rightEdgeOffset > viewportDimensions.width) { // right overflow
-        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset
-      }
-    }
-
-    return delta
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
   }
 
   Tooltip.prototype.getTitle = function () {
@@ -1667,11 +1541,19 @@ if (typeof jQuery === 'undefined') {
   }
 
   Tooltip.prototype.tip = function () {
-    return this.$tip = this.$tip || $(this.options.template)
+    if (this.$tip) {
+      return this.$tip;
+    } else {
+      return $(this.options.template);
+    }
   }
 
   Tooltip.prototype.arrow = function () {
-    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow')
+    if (this.$arrow) {
+      return this.$arrow;
+    } else {
+      return this.tip().find('.tooltip-arrow');
+    }
   }
 
   Tooltip.prototype.validate = function () {
@@ -1715,10 +1597,6 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.tooltip')
       var options = typeof option == 'object' && option
 
-<<<<<<< HEAD:docs/dist/js/nps-bootstrap.js
-=======
-      if (!data && /destroy|hide/.test(option)) return
->>>>>>> upstream/master:docs/dist/js/bootstrap.js
       if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
       if (typeof option == 'string') data[option]()
     })
