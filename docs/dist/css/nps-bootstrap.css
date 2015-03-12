@@ -1,6 +1,11 @@
 /*!
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
  * NPS Bootstrap v3.2.0 (http://www.nps.gov/npmap/tools/bootstrap/)
  * Copyright 2011-2014 Twitter, Inc. and the National Park Service
+=======
+ * Bootstrap v3.3.2 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Built on 10/30/2014 at 04:02PM MDT
  */
@@ -269,7 +274,7 @@ th {
   font-family: 'Glyphicons Halflings';
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -289,7 +294,8 @@ th {
 .glyphicon-plus:before {
   content: "\2b";
 }
-.glyphicon-euro:before {
+.glyphicon-euro:before,
+.glyphicon-eur:before {
   content: "\20ac";
 }
 .glyphicon-minus:before {
@@ -883,6 +889,192 @@ th {
 .glyphicon-tree-deciduous:before {
   content: "\e200";
 }
+.glyphicon-cd:before {
+  content: "\e201";
+}
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+.glyphicon-copy:before {
+  content: "\e205";
+}
+.glyphicon-paste:before {
+  content: "\e206";
+}
+.glyphicon-alert:before {
+  content: "\e209";
+}
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+.glyphicon-king:before {
+  content: "\e211";
+}
+.glyphicon-queen:before {
+  content: "\e212";
+}
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+.glyphicon-knight:before {
+  content: "\e215";
+}
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+.glyphicon-bed:before {
+  content: "\e219";
+}
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+.glyphicon-erase:before {
+  content: "\e221";
+}
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+.glyphicon-btc:before {
+  content: "\e227";
+}
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+.glyphicon-rub:before {
+  content: "\20bd";
+}
+.glyphicon-scale:before {
+  content: "\e230";
+}
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+.glyphicon-education:before {
+  content: "\e233";
+}
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+.glyphicon-oil:before {
+  content: "\e238";
+}
+.glyphicon-grain:before {
+  content: "\e239";
+}
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+.glyphicon-console:before {
+  content: "\e254";
+}
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -915,12 +1107,20 @@ textarea {
   line-height: inherit;
 }
 a {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #936a00;
+=======
+  color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   text-decoration: none;
 }
 a:hover,
 a:focus {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #b98600;
+=======
+  color: #23527c;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   text-decoration: underline;
 }
 a:focus {
@@ -986,6 +1186,9 @@ hr {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+[role="button"] {
+  cursor: pointer;
 }
 h1,
 h2,
@@ -1153,10 +1356,17 @@ mark,
   color: #777;
 }
 .text-primary {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #b28000;
 }
 a.text-primary:hover {
   color: #7f5b00;
+=======
+  color: #337ab7;
+}
+a.text-primary:hover {
+  color: #286090;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .text-success {
   color: #3c763d;
@@ -1184,10 +1394,17 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
 }
 a.bg-primary:hover {
   background-color: #7f5b00;
+=======
+  background-color: #337ab7;
+}
+a.bg-primary:hover {
+  background-color: #286090;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .bg-success {
   background-color: #dff0d8;
@@ -2123,7 +2340,7 @@ th {
 .table-bordered > thead > tr > td {
   border-bottom-width: 2px;
 }
-.table-striped > tbody > tr:nth-child(odd) {
+.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
@@ -2246,6 +2463,7 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 .table-responsive {
+  min-height: .01%;
   overflow-x: auto;
 }
 @media screen and (max-width: 767px) {
@@ -2402,9 +2620,12 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  cursor: not-allowed;
   background-color: #eee;
   opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
 }
 textarea.form-control {
   height: auto;
@@ -2412,56 +2633,33 @@ textarea.form-control {
 input[type="search"] {
   -webkit-appearance: none;
 }
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  line-height: 34px;
-  line-height: 1.42857143 \0;
-}
-input[type="date"].input-sm,
-input[type="time"].input-sm,
-input[type="datetime-local"].input-sm,
-input[type="month"].input-sm {
-  line-height: 30px;
-  line-height: 1.5 \0;
-}
-input[type="date"].input-lg,
-input[type="time"].input-lg,
-input[type="datetime-local"].input-lg,
-input[type="month"].input-lg {
-  line-height: 46px;
-  line-height: 1.33 \0;
-}
-_:-ms-fullscreen,
-:root input[type="date"],
-_:-ms-fullscreen,
-:root input[type="time"],
-_:-ms-fullscreen,
-:root input[type="datetime-local"],
-_:-ms-fullscreen,
-:root input[type="month"] {
-  line-height: 1.42857143;
-}
-_:-ms-fullscreen.input-sm,
-:root input[type="date"].input-sm,
-_:-ms-fullscreen.input-sm,
-:root input[type="time"].input-sm,
-_:-ms-fullscreen.input-sm,
-:root input[type="datetime-local"].input-sm,
-_:-ms-fullscreen.input-sm,
-:root input[type="month"].input-sm {
-  line-height: 1.5;
-}
-_:-ms-fullscreen.input-lg,
-:root input[type="date"].input-lg,
-_:-ms-fullscreen.input-lg,
-:root input[type="time"].input-lg,
-_:-ms-fullscreen.input-lg,
-:root input[type="datetime-local"].input-lg,
-_:-ms-fullscreen.input-lg,
-:root input[type="month"].input-lg {
-  line-height: 1.33;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    line-height: 34px;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm,
+  .input-group-sm input[type="date"],
+  .input-group-sm input[type="time"],
+  .input-group-sm input[type="datetime-local"],
+  .input-group-sm input[type="month"] {
+    line-height: 30px;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg,
+  .input-group-lg input[type="date"],
+  .input-group-lg input[type="time"],
+  .input-group-lg input[type="datetime-local"],
+  .input-group-lg input[type="month"] {
+    line-height: 46px;
+  }
 }
 .form-group {
   margin-bottom: 15px;
@@ -2495,6 +2693,7 @@ _:-ms-fullscreen.input-lg,
 }
 .radio-inline,
 .checkbox-inline {
+  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -2528,6 +2727,7 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
+  min-height: 34px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
@@ -2537,7 +2737,21 @@ fieldset[disabled] .checkbox label {
   padding-right: 0;
   padding-left: 0;
 }
-.input-sm,
+.input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.input-sm {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.input-sm,
+select[multiple].input-sm {
+  height: auto;
+}
 .form-group-sm .form-control {
   height: 30px;
   padding: 5px 10px;
@@ -2545,35 +2759,57 @@ fieldset[disabled] .checkbox label {
   line-height: 1.5;
   border-radius: 3px;
 }
-select.input-sm,
 select.form-group-sm .form-control {
   height: 30px;
   line-height: 30px;
 }
-textarea.input-sm,
 textarea.form-group-sm .form-control,
-select[multiple].input-sm,
 select[multiple].form-group-sm .form-control {
   height: auto;
 }
-.input-lg,
-.form-group-lg .form-control {
+.form-group-sm .form-control-static {
+  height: 30px;
+  min-height: 32px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.input-lg {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.3333333;
   border-radius: 6px;
 }
-select.input-lg,
-select.form-group-lg .form-control {
+select.input-lg {
   height: 46px;
   line-height: 46px;
 }
 textarea.input-lg,
+select[multiple].input-lg {
+  height: auto;
+}
+.form-group-lg .form-control {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+select.form-group-lg .form-control {
+  height: 46px;
+  line-height: 46px;
+}
 textarea.form-group-lg .form-control,
-select[multiple].input-lg,
 select[multiple].form-group-lg .form-control {
   height: auto;
+}
+.form-group-lg .form-control-static {
+  height: 46px;
+  min-height: 38px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
 }
 .has-feedback {
   position: relative;
@@ -2783,7 +3019,7 @@ select[multiple].form-group-lg .form-control {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 14.3px;
+    padding-top: 14.333333px;
   }
 }
 @media (min-width: 768px) {
@@ -2892,8 +3128,13 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
   border-color: #996e00;
+=======
+  background-color: #337ab7;
+  border-color: #2e6da4;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2902,8 +3143,13 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #7f5b00;
   border-color: #5b4200;
+=======
+  background-color: #286090;
+  border-color: #204d74;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2928,11 +3174,19 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
   border-color: #996e00;
 }
 .btn-primary .badge {
   color: #b28000;
+=======
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary .badge {
+  color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   background-color: #fff;
 }
 .btn-success {
@@ -3117,7 +3371,11 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-link {
   font-weight: normal;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #936a00;
+=======
+  color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   border-radius: 0;
 }
 .btn-link,
@@ -3137,7 +3395,11 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #b98600;
+=======
+  color: #23527c;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3152,7 +3414,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-lg > .btn {
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.3333333;
   border-radius: 6px;
 }
 .btn-sm,
@@ -3282,11 +3544,9 @@ fieldset[disabled] .btn-subtle.active {
 }
 .collapse {
   display: none;
-  visibility: hidden;
 }
 .collapse.in {
   display: block;
-  visibility: visible;
 }
 tr.collapse.in {
   display: table-row;
@@ -3314,10 +3574,11 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px solid;
+  border-top: 4px dashed;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+.dropup,
 .dropdown {
   position: relative;
 }
@@ -3375,7 +3636,11 @@ tbody.collapse.in {
 .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
+=======
+  background-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
@@ -3435,7 +3700,7 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
@@ -3467,10 +3732,6 @@ tbody.collapse.in {
 .btn-group > .btn.active,
 .btn-group-vertical > .btn.active {
   z-index: 2;
-}
-.btn-group > .btn:focus,
-.btn-group-vertical > .btn:focus {
-  outline: 0;
 }
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
@@ -3511,12 +3772,12 @@ tbody.collapse.in {
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
-.btn-group > .btn-group:first-child > .btn:last-child,
-.btn-group > .btn-group:first-child > .dropdown-toggle {
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn-group:last-child > .btn:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3642,7 +3903,7 @@ tbody.collapse.in {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.3333333;
   border-radius: 6px;
 }
 select.input-group-lg > .form-control,
@@ -3805,8 +4066,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #efece3;
   border-color: #936a00;
+=======
+  background-color: #eee;
+  border-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .nav .nav-divider {
   height: 1px;
@@ -3899,7 +4165,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
+=======
+  background-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .nav-stacked > li {
   float: none;
@@ -3956,11 +4226,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .tab-pane {
   display: none;
-  visibility: hidden;
 }
 .tab-content > .active {
   display: block;
-  visibility: visible;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4025,7 +4293,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
-    visibility: visible !important;
   }
   .navbar-collapse.in {
     overflow-y: visible;
@@ -4274,6 +4541,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4570,7 +4840,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #936a00;
+=======
+  color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4590,7 +4864,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #b98600;
+=======
+  color: #23527c;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   background-color: #eee;
   border-color: #ddd;
 }
@@ -4603,8 +4881,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   z-index: 2;
   color: #fff;
   cursor: default;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
   border-color: #b28000;
+=======
+  background-color: #337ab7;
+  border-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -4718,11 +5001,19 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
   background-color: #7f5b00;
+=======
+  background-color: #337ab7;
+}
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #286090;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .label-success {
   background-color: #5cb85c;
@@ -4773,7 +5064,8 @@ a.label:focus {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge {
+.btn-xs .badge,
+.btn-group-xs > .btn .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -4783,10 +5075,20 @@ a.badge:focus {
   text-decoration: none;
   cursor: pointer;
 }
-a.list-group-item.active > .badge,
+.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #936a00;
+=======
+  color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   background-color: #fff;
+}
+.list-group-item > .badge {
+  float: right;
+}
+.list-group-item > .badge + .badge {
+  margin-right: 5px;
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
@@ -4820,7 +5122,8 @@ a.list-group-item.active > .badge,
   .jumbotron {
     padding: 48px 0;
   }
-  .container .jumbotron {
+  .container .jumbotron,
+  .container-fluid .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -4849,7 +5152,11 @@ a.list-group-item.active > .badge,
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   border-color: #936a00;
+=======
+  border-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .thumbnail .caption {
   padding: 9px;
@@ -4971,7 +5278,11 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
+=======
+  background-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
   -webkit-transition: width .6s ease;
@@ -4991,14 +5302,6 @@ a.thumbnail.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
        -o-animation: progress-bar-stripes 2s linear infinite;
           animation: progress-bar-stripes 2s linear infinite;
-}
-.progress-bar[aria-valuenow="0"] {
-  min-width: 30px;
-  color: #777;
-  background-color: transparent;
-  background-image: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 .progress-bar-success {
   background-color: #5cb85c;
@@ -5032,29 +5335,46 @@ a.thumbnail.active {
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
-.media,
-.media-body {
-  overflow: hidden;
-  zoom: 1;
-}
-.media,
-.media .media {
+.media {
   margin-top: 15px;
 }
 .media:first-child {
   margin-top: 0;
 }
+.media,
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.media-body {
+  width: 10000px;
+}
 .media-object {
   display: block;
 }
-.media-heading {
-  margin: 0 0 5px;
-}
-.media > .pull-left {
-  margin-right: 10px;
-}
+.media-right,
 .media > .pull-right {
-  margin-left: 10px;
+  padding-left: 10px;
+}
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.media-middle {
+  vertical-align: middle;
+}
+.media-bottom {
+  vertical-align: bottom;
+}
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .media-list {
   padding-left: 0;
@@ -5080,12 +5400,6 @@ a.thumbnail.active {
   margin-bottom: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-}
-.list-group-item > .badge {
-  float: right;
-}
-.list-group-item > .badge + .badge {
-  margin-right: 5px;
 }
 a.list-group-item {
   color: #555;
@@ -5121,8 +5435,13 @@ a.list-group-item:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #b28000;
   border-color: #b28000;
+=======
+  background-color: #337ab7;
+  border-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -5138,7 +5457,11 @@ a.list-group-item:focus {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   color: #ffdb7f;
+=======
+  color: #c7ddef;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .list-group-item-success {
   color: #3c763d;
@@ -5262,7 +5585,11 @@ a.list-group-item-danger.active:focus {
   font-size: 16px;
   color: inherit;
 }
-.panel-title > a {
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
   color: inherit;
 }
 .panel-footer {
@@ -5482,6 +5809,7 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #7a8f52;
 }
 .panel-primary {
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   border-color: #b28000;
 }
 .panel-primary > .panel-heading {
@@ -5498,6 +5826,24 @@ a.list-group-item-danger.active:focus {
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #b28000;
+=======
+  border-color: #337ab7;
+}
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #337ab7;
+}
+.panel-primary > .panel-heading .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #337ab7;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -5605,10 +5951,10 @@ a.list-group-item-danger.active:focus {
   height: 100%;
   border: 0;
 }
-.embed-responsive.embed-responsive-16by9 {
+.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3 {
+.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 .well {
@@ -5667,7 +6013,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1050;
   display: none;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -5715,7 +6061,12 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   background-color: #454545;
+=======
+  z-index: 1040;
+  background-color: #000;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
@@ -5819,9 +6170,10 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  font-weight: normal;
   line-height: 1.4;
-  visibility: visible;
   filter: alpha(opacity=0);
   opacity: 0;
 }
@@ -5869,7 +6221,9 @@ button.close {
   border-top-color: #fff;
 }
 .tooltip.top-left .tooltip-arrow {
+  right: 5px;
   bottom: 0;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   left: 10px;
   border-width: 10px 10px 0;
   border-top-color: #fff;
@@ -5879,6 +6233,18 @@ button.close {
   bottom: 0;
   border-width: 10px 10px 0;
   border-top-color: #fff;
+=======
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
@@ -5903,6 +6269,7 @@ button.close {
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
+<<<<<<< HEAD:docs/dist/css/nps-bootstrap.css
   left: 10px;
   border-width: 0 10px 10px;
   border-bottom-color: #fff;
@@ -5942,6 +6309,19 @@ button.close {
 }
 .tooltip.bottom-right .tooltip-arrow {
   border-bottom-color: #bebebe;
+=======
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+>>>>>>> upstream/master:docs/dist/css/bootstrap.css
 }
 .popover {
   position: absolute;
@@ -5951,6 +6331,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6208,6 +6589,7 @@ button.close {
   height: 20px;
   margin-top: -10px;
   font-family: serif;
+  line-height: 1;
 }
 .carousel-control .icon-prev:before {
   content: '\2039';
@@ -6365,7 +6747,6 @@ button.close {
 }
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 .affix {
   position: fixed;
