@@ -28,5 +28,5 @@ To get started, check out [http://www.nps.gov/npmap/bootstrap/](http://www.nps.g
 
 You can also load Bootstrap directly from the National Park Service's CDN:
 
-    `http://www.nps.gov/lib/bootstrap/3.3.2/css/nps-bootstrap.min.css`
-    `http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js`
+    http://www.nps.gov/lib/bootstrap/3.3.2/css/nps-bootstrap.min.css
+    http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js
