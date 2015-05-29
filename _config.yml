@@ -10,8 +10,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-baseurl:          /npmap/bootstrap/3.3.2
-url:              http://www.nps.gov/npmap/bootstrap/3.3.2/
+baseurl:          /npmap/tools/bootstrap
+url:              http://www.nps.gov/npmap/tools/bootstrap
 encoding:         UTF-8
 
 # Custom vars
@@ -24,7 +24,7 @@ download:
   dist:           
   sass:           
 
-blog:             http://www.nps.gov/npmap/blog/
+blog:             http://www.nps.gov/npmap/blog
 expo:             
 
 cdn:

@@ -115,7 +115,7 @@ module.exports = function (grunt) {
           'js/collapse-nps.js',
           'js/dropdown.js',
           'js/modal.js',
-          'js/tooltip-nps.js',
+          'js/tooltip.js',
           'js/popover.js',
           'js/scrollspy.js',
           'js/tab.js',
