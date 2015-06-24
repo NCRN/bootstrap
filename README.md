@@ -21,8 +21,9 @@ To get started, check out [http://www.nps.gov/npmap/bootstrap/](http://www.nps.g
 1. Install Grunt CLI globally: `npm install -g grunt-cli`
 1. Run `grunt dist docs` to build the CSS, JavaScript, and docs
 1. Install [Jekyll](http://jekyllrb.com/)
+1. `gem install rouge`
 1. Run `jekyll serve`
-1. Browse to `http://localhost:9001/npmap/bootstrap/3.3.2/`
+1. Browse to `http://localhost:9001/npmap/tools/bootstrap/
 
 ## CDN
 
