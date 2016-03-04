@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://www.nps.gov/npmap/img/nps-arrowhead-medium.png" alt="NPS Arrowhead">
+  <img src="https://raw.githubusercontent.com/nationalparkservice/bootstrap/master/img/apple-touch-icon-144x144-precomposed.png" alt="NPS Arrowhead">
 </p>
 
 # NPS Bootstrap
